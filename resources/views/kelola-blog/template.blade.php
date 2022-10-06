@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/app.css">
     <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon">
 
     <title>@yield('title')</title>
@@ -28,7 +27,7 @@
                 </div>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow-xl bg-base-100 rounded-box w-52">
-                <li><a href="">Logout</a></li>
+                <li><a href="/">Logout</a></li>
             </ul>
             </div>
         </div>
@@ -38,20 +37,19 @@
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-row flex-wrap justify-center lg:justify-start z-0 overflow-y-auto mt-16 pb-16">
 
-            @yield(content)
+        @yield('content')
 
         </div> 
         <div class="drawer-side mt-16">
           <label for="my-drawer-2" class="drawer-overlay"></label> 
           <ul class="menu p-4 overflow-y-auto w-64 bg-[#23153c] lg:bg-inherit text-neutral-content">
             <!-- Sidebar content here -->
-            <li><a href="tambah-blog.html">Tambah Blog</a></li>
-            <li><a class="bg-[#570df8]" href="kelola-blog.html">Kelola Blog</a></li>
-            <li><a href="kotakpesan.html">Kotak Pesan</a></li>
+            <li><a class="@yield('tambah-blog-aktif')" href="tambah-blog">Tambah Blog</a></li>
+            <li><a class="@yield('kelola-blog-aktif')" href="kelola-blog">Kelola Blog</a></li>
+            <li><a class="@yield('kotak-pesan-aktif')" href="kotak-pesan">Kotak Pesan</a></li>
           </ul>
-        
         </div>
-      </div>
+    </div>
     
 </body>
 </html>

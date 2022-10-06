@@ -2,6 +2,11 @@
 
 @section('title', 'Kotak Pesan')
 
+<!-- tombol yang aktif -->
+@section('tambah-blog-aktif', '')
+@section('kelola-blog-aktif', '')
+@section('kotak-pesan-aktif', 'bg-[#570df8]')
+
 @section('content')
         
     <div class="overflow-x-auto mb-6">

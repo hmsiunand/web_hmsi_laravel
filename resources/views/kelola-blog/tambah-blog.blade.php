@@ -2,6 +2,11 @@
 
 @section('title', 'Tambah Blog')
 
+<!-- tombol yang aktif -->
+@section('tambah-blog-aktif', 'bg-[#570df8]')
+@section('kelola-blog-aktif', '')
+@section('kotak-pesan-aktif', '')
+
 @section('content')
         
     <div class="form-control w-full max-w-5xl justify-center">

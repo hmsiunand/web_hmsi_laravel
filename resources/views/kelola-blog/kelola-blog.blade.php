@@ -2,6 +2,11 @@
 
 @section('title', 'Kelola Blog')
 
+<!-- tombol yang aktif -->
+@section('tambah-blog-aktif', '')
+@section('kelola-blog-aktif', 'bg-[#570df8]')
+@section('kotak-pesan-aktif', '')
+
 @section('content')
         
     <div class="m-4 card rounded-xl lg:w-96 max-w-xs max-h-96 bg-base-100 shadow-xl text-justify">

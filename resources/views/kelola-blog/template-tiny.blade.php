@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/app.css">
     <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon">
     
-    <script src="https://cdn.tiny.cloud/1/u9pt5jodaokuwd1oyfdnabcq5rbp3yio50ghvevhzyf620wr/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="{{env('TOKEN_TINY')}}" referrerpolicy="origin"></script>
+    <!-- tokennya pelu ditambahin di .env -->
 
     <title>@yield('title')</title>
 </head>
@@ -30,7 +30,7 @@
                 </div>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow-xl bg-base-100 rounded-box w-52">
-                <li><a href="">Logout</a></li>
+                <li><a href="/">Logout</a></li>
             </ul>
             </div>
         </div>
@@ -47,9 +47,9 @@
           <label for="my-drawer-2" class="drawer-overlay"></label> 
           <ul class="menu p-4 overflow-y-auto w-64 bg-[#23153c] lg:bg-inherit text-neutral-content">
             <!-- Sidebar content here -->
-            <li><a href="tambah-blog.html">Tambah Blog</a></li>
-            <li><a class="bg-[#570df8]" href="kelola-blog.html">Kelola Blog</a></li>
-            <li><a href="kotakpesan.html">Kotak Pesan</a></li>
+            <li><a class="@yield('tambah-blog-aktif')" href="tambah-blog">Tambah Blog</a></li>
+            <li><a class="@yield('kelola-blog-aktif')" href="kelola-blog">Kelola Blog</a></li>
+            <li><a class="@yield('kotak-pesan-aktif')" href="kotak-pesan">Kotak Pesan</a></li>
           </ul>
         
         </div>
@@ -58,7 +58,7 @@
       <script>
         tinymce.init({
           selector: 'textarea',
-          placeholder: "artikel yang akan diedit"
+          placeholder: "tulis artikel disini"
         });
       </script>
 </body>

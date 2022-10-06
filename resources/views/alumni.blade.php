@@ -478,6 +478,114 @@
         </a>  
       </div>
     </section>
+    
+    <section> <!-- 2017 -->
+      <div class="text-center py-6">
+        <p class="text-3xl sm:text-5xl py-1 text-white blog-tebal">2017</p>
+      </div>
+      <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
+                                
+      <div class="text-center mt-6 mb-10">
+        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <!-- <figure></figure> -->
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Presidium Inti</h2>
+              <p><b>Ketua Umum </b>       : Rafael Dinur</p>
+              <p><b>Wakil Ketua Umum</b> 	: Ade Indra</p>
+              <p><b>Sekretaris 1</b>   : Nulfahmi Laura Widared</p>
+              <p><b>Sekretaris 2</b>   : Nazhifa Najla Ardian</p>
+              <p><b>Bendahara 1</b>  	: Nilam Suri</p>
+              <p><b>Bendahara 2</b>  	: Marchella Anrisya</p>
+            </div>
+          </div> 
+        </a>
+        <br>
+        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <!-- <figure></figure> -->
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Kemahasiswaan</h2>
+              <p><b> Kepala Divisi</b>      : Rafki Azim</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Aghill Tresna A</li>
+                <li>Tari Vandira</li>
+                <li>Vanesha Asyariza</li>
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div> 
+        </a>
+        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <!-- <figure></figure> -->
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Hubungan Masyarakat</h2>
+              <p><b> Kepala Divisi</b>      : Galuh Permana</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Chairani Nushida</li>
+                <li>Yolanda Parawita</li>
+                <li>M. Imam Sutria</li>
+                <li>Lucy Trilinda</li>                     
+              </ul>
+            </div>
+          </div> 
+        </a>
+        <br class="hidden lg:block">
+        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <!-- <figure></figure> -->
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
+              <p><b> Kepala Divisi</b>      : Rahmat Sandhy</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Wardatul Alifah</li>
+                <li>Wardatul Hanifah</li>
+                <li>Ivan Rida Rivaldo</li>
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div> 
+        </a>
+        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <!-- <figure></figure> -->
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi IT</h2>
+              <p><b> Kepala Divisi</b>      : Iqbal Nawazaki</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Fitri Adeliani</li>
+                <li>Tata Bayu Amarta</li>
+                <li>Atika Hijriandini</li>
+                <li>Ahmad Fauzan Hasbullah</li>
+                <li>Afdhal Zikri</li>
+              </ul>
+            </div>
+          </div> 
+        </a>
+        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <!-- <figure></figure> -->
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Kewirausahaan</h2>
+              <p><b> Kepala Divisi</b>      : M. Rocky Kurniawan</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Monica Silvia</li>
+                <li>Ferina Dwi Fitri</li>
+                <li>Tri Agustian Ameldi</li>
+                <li>Zera Olviana</li>
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div> 
+        </a>  
+      </div>
+    </section>
 
   </main>
 
