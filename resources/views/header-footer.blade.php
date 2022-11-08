@@ -86,7 +86,7 @@
           <div class="text-lg">
             <!-- <img src="./img/logo-hmsi-putih.png" class="w-14" /> -->
             <p class="font-bold">HMSI - Universitas Andalas</p> 
-            <p>Copyright © 2022 - All right reserved</p>
+            <p>Copyright © <?php echo date("Y"); ?> - All right reserved</p>
           </div>
           <br>
         </footer>

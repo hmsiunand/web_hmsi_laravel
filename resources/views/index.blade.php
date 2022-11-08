@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HMSI adalah Himpunan Mahasiswa Sistem Informasi yang berada pada jurusan Sistem Informasi yang berfungsi sebagai wadah untuk menyalurkan aspirasi, media komunikasi dan informasi, serta pembelajaran organisasi untuk pengembangan diri bagi anggotanya.">
+    <meta name="keywords" content="hmsi unand, hmsi, unand, sistem informasi">
     
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon">
@@ -44,7 +46,7 @@
                       <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                     </a>
                     <ul class="p-2 bg-base-100 text-black">
-                      <li><a href="/div-inti">Inti</a></li>
+                      <li><a href="/inti">Inti</a></li>
                       <li><a href="/div-psdm">PSDM</a></li>
                       <li><a href="/div-humas">Humas</a></li>
                       <li><a href="/div-kwu">Kewirausahaan</a></li>
@@ -232,7 +234,7 @@
               <p class="font-bold">
                 HMSI - Universitas Andalas
               </p> 
-              <p>Copyright © 2022 - All right reserved</p>
+              <p>Copyright © <?php echo date("Y"); ?> - All right reserved</p>
             </div>
             <br>
           </footer>          
@@ -264,7 +266,7 @@
             </div>
             <div class="collapse-content"> 
               <ul>
-                <li><a href="/div-inti">Inti</a></li>
+                <li><a href="/inti">Inti</a></li>
                 <li><a href="/div-psdm">PSDM</a></li>
                 <li><a href="/div-humas">Humas</a></li>
                 <li><a href="/div-kwu">Kewirausahaan</a></li>
