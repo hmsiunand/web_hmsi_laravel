@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SaranController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {return view('index');});
 Route::get('/alumni', function () {return view('alumni');});
-Route::get('/blog', function () {return view('blog');});
-Route::get('/detail-blog', function () {return view('detail-blog');});
 Route::get('/lambang', function () {return view('lambang');});
 Route::get('/login', function () {return view('login');});
 Route::get('/tentang-hmsi', function () {return view('tentang-hmsi');});
@@ -30,9 +30,12 @@ Route::get('/div-psi', function () {return view('divisi.div-psi');});
 Route::get('/div-rtk', function () {return view('divisi.div-rtk');});
 Route::get('/inti', function () {return view('divisi.inti');});
 
-//kelola blog
-Route::get('/edit-blog', function () {return view('kelola-blog.edit-blog');});
-Route::get('/kelola-blog', function () {return view('kelola-blog.kelola-blog');});
-Route::get('/kotak-pesan', function () {return view('kelola-blog.kotak-pesan');});
+//  blog
+Route::get('/blog', [BlogController::class, 'index'])->name('tampil_list_blog');
+Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('tampil_detail_blog');
+
+Route::get('/edit-blog/{blog:slug}', [BlogController::class, 'edit']);
+Route::get('/kelola-blog', [BlogController::class, 'index_kelola']);
+Route::get('/kotak-pesan', [SaranController::class, 'index']);
 Route::get('/tambah-blog', function () {return view('kelola-blog.tambah-blog');});
 

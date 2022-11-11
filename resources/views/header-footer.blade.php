@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="shortcut icon" href="{{ asset('img/favicon-96x96.png') }}" type="image/x-icon">
 
     <title>@yield('title') | HMSI Universitas Andalas</title>
 </head>
@@ -19,7 +19,7 @@
         <div class="navbar text-neutral-content sticky top-0 z-10 bg-[#23153c]">
           <div class="flex-1 px-2 lg:flex-none">
             <a href="/">
-              <img src="./img/logo-hmsi.png" class="w-24 sm:w-28 sm:mx-9 mx-0" />
+              <img src="{{ asset('img/logo-hmsi.png') }}" class="w-24 sm:w-28 sm:mx-9 mx-0" />
             </a>
           </div> 
           <div class="flex justify-end flex-1 px-2">

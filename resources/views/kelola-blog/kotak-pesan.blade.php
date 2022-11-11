@@ -9,29 +9,32 @@
 
 @section('content')
         
-    <div class="overflow-x-auto mb-6">
-        <table class="table w-full">
-            <!-- head -->
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>Nama</th>
-                <th>Pesan</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="hover">
-                <th>1</th>
-                <td class="whitespace-pre-wrap">Lorem</td>
-                <td class="whitespace-pre-wrap">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quam assumenda harum rem dolorum cupiditate nesciunt ullam asperiores eius dicta totam odit quas, inventore laboriosam debitis consequatur similique atque illum labore ea explicabo.</td>
-            </tr>
-            <tr class="hover">
-                <th>2</th>
-                <td class="whitespace-pre-wrap">bambanh</td>
-                <td class="whitespace-pre-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consectetur porro iure obcaecati rem!</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    @if($saran->isEmpty())
+        <h3 class="text-white text-2xl my-36 mx-auto">Belum ada saran~~~</h3>
+    @else
+        <div class="overflow-x-auto mb-6 mx-2">
+            <table class="table w-full">
+                <!-- head -->
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nama</th>
+                    <th>Waktu</th>
+                    <th>Pesan</th>
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach($saran as $s)
+                    <tr class="hover">
+                        <th>{{$loop->iteration}}</th>
+                        <td class="whitespace-pre-wrap">{{$s->nama}}</td>
+                        <td class="whitespace-pre-wrap">{{$s->created_at}}</td>
+                        <td class="whitespace-pre-wrap">{{$s->saran}}</td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    @endif
 
 @endsection

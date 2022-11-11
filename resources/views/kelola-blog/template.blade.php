@@ -44,9 +44,9 @@
           <label for="my-drawer-2" class="drawer-overlay"></label> 
           <ul class="menu p-4 overflow-y-auto w-64 bg-[#23153c] lg:bg-inherit text-neutral-content">
             <!-- Sidebar content here -->
-            <li><a class="@yield('tambah-blog-aktif')" href="tambah-blog">Tambah Blog</a></li>
-            <li><a class="@yield('kelola-blog-aktif')" href="kelola-blog">Kelola Blog</a></li>
-            <li><a class="@yield('kotak-pesan-aktif')" href="kotak-pesan">Kotak Pesan</a></li>
+            <li><a class="@yield('tambah-blog-aktif')" href="/tambah-blog">Tambah Blog</a></li>
+            <li><a class="@yield('kelola-blog-aktif')" href="/kelola-blog">Kelola Blog</a></li>
+            <li><a class="@yield('kotak-pesan-aktif')" href="/kotak-pesan">Kotak Pesan</a></li>
           </ul>
         </div>
     </div>

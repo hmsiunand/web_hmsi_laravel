@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="shortcut icon" href="{{ asset('img/favicon-96x96.png') }}" type="image/x-icon">
     
     <script src="{{env('TOKEN_TINY')}}" referrerpolicy="origin"></script>
     <!-- tokennya pelu ditambahin di .env -->
@@ -20,7 +20,7 @@
             <label for="my-drawer-2" class="btn btn-square drawer-button lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </label>
-            <img src="./img/logo-hmsi.png" class="w-16 sm:w-24 sm:mx-9 mx-3" />
+            <img src="{{ asset('img/logo-hmsi.png') }}" class="w-16 sm:w-24 sm:mx-9 mx-3" />
         </div>
         <div class="flex-none">
             <div class="dropdown dropdown-end">
@@ -47,9 +47,9 @@
           <label for="my-drawer-2" class="drawer-overlay"></label> 
           <ul class="menu p-4 overflow-y-auto w-64 bg-[#23153c] lg:bg-inherit text-neutral-content">
             <!-- Sidebar content here -->
-            <li><a class="@yield('tambah-blog-aktif')" href="tambah-blog">Tambah Blog</a></li>
-            <li><a class="@yield('kelola-blog-aktif')" href="kelola-blog">Kelola Blog</a></li>
-            <li><a class="@yield('kotak-pesan-aktif')" href="kotak-pesan">Kotak Pesan</a></li>
+            <li><a class="@yield('tambah-blog-aktif')" href="/tambah-blog">Tambah Blog</a></li>
+            <li><a class="@yield('kelola-blog-aktif')" href="/kelola-blog">Kelola Blog</a></li>
+            <li><a class="@yield('kotak-pesan-aktif')" href="/kotak-pesan">Kotak Pesan</a></li>
           </ul>
         
         </div>

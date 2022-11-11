@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSaranTable extends Migration
+class CreateBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateSaranTable extends Migration
      */
     public function up()
     {
-        Schema::create('saran', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->text('saran');
+            $table->string('judul');
+            $table->string('slug')->unique();
+            $table->string('ringkasan');
+            $table->string('gambar');
+            $table->text('artikel');
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateSaranTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('saran');
+        Schema::dropIfExists('blogs');
     }
 }
