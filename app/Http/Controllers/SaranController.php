@@ -14,7 +14,7 @@ class SaranController extends Controller
      */
     public function index()
     {
-        $saran = Saran::get();
+        $saran = Saran::latest()->get();
         return view("kelola-blog.kotak-pesan", compact('saran'));
     }
 
@@ -36,7 +36,14 @@ class SaranController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required|min:3|max:100',
+            'saran' => 'required|min:3|max:1000'
+        ]);
+
+        return redirect()->back()->with('message', 'Berhasil!');
+        // return redirect('/#kotak-saran');
+        // dd($request);
     }
 
     /**

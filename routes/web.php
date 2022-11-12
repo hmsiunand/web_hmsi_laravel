@@ -30,6 +30,9 @@ Route::get('/div-psi', function () {return view('divisi.div-psi');});
 Route::get('/div-rtk', function () {return view('divisi.div-rtk');});
 Route::get('/inti', function () {return view('divisi.inti');});
 
+//saran
+Route::post('/kirimsaran', [SaranController::class, 'store'])->name('kirim_saran');
+
 //  blog
 Route::get('/blog', [BlogController::class, 'index'])->name('tampil_list_blog');
 Route::get('/blog/{blog:slug}', [BlogController::class, 'show'])->name('tampil_detail_blog');

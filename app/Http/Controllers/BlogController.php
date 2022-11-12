@@ -14,13 +14,13 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = Blog::select('judul', 'slug', 'ringkasan', 'gambar', 'created_at')->get();
+        $blog = Blog::select('judul', 'slug', 'ringkasan', 'gambar', 'created_at')->latest()->paginate(9);
         return view("blog", compact('blog'));
     }
 
     public function index_kelola()
     {
-        $blog = Blog::select('judul', 'slug', 'ringkasan', 'gambar', 'created_at')->get();
+        $blog = Blog::select('judul', 'slug', 'ringkasan', 'gambar', 'created_at')->latest()->get();
         return view("kelola-blog.kelola-blog", compact('blog'));
     }
 
@@ -42,7 +42,11 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judul' => 'required|min:5|max:100',
+            'slug' => 'required|unique:blogs',
+            'ringkasan' => 'required|max:255'
+        ]);
     }
 
     /**
