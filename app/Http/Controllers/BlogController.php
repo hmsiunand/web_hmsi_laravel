@@ -14,7 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = Blog::select('judul', 'slug', 'ringkasan', 'gambar', 'created_at')->latest()->paginate(9);
+        $blog = Blog::select('judul', 'slug', 'ringkasan', 'gambar', 'created_at')->latest()->paginate(12);
         return view("blog", compact('blog'));
     }
 
@@ -42,11 +42,17 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validatedData = $request->validate([
             'judul' => 'required|min:5|max:100',
             'slug' => 'required|unique:blogs',
             'ringkasan' => 'required|max:255'
         ]);
+
+        Blog::create($validatedData);
+
+        $request->session()->flash('message', 'Berhasil menambahkan blog!');
+
+        return redirect()->back();
     }
 
     /**

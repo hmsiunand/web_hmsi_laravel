@@ -1,6 +1,10 @@
-@extends('kelola-blog.template-tiny')
+@extends('kelola-blog.template')
 
 @section('title', 'Edit Blog')
+
+@section('script-token')
+    <script src="{{env('TOKEN_TINY')}}" referrerpolicy="origin"></script>
+@endsection
 
 <!-- tombol yang aktif -->
 @section('tambah-blog-aktif', '')
@@ -33,4 +37,13 @@
         </form>
     </div>
 
+@endsection
+
+@section('script-tiny')
+    <script>
+        tinymce.init({
+          selector: 'textarea',
+          placeholder: "tulis artikel disini"
+        });
+    </script>
 @endsection

@@ -41,9 +41,9 @@ class SaranController extends Controller
             'saran' => 'required|min:3|max:1000'
         ]);
 
-        return redirect()->back()->with('message', 'Berhasil!');
-        // return redirect('/#kotak-saran');
-        // dd($request);
+        $request->session()->flash('message', 'Berhasil!');
+
+        return redirect()->back();
     }
 
     /**

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="shortcut icon" href="{{ asset('img/favicon-96x96.png') }}" type="image/x-icon">
+
+    @yield('script-token')
 
     <title>@yield('title')</title>
 </head>
@@ -17,8 +19,9 @@
             <label for="my-drawer-2" class="btn btn-square drawer-button lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </label>
-            <img src="./img/logo-hmsi.png" class="w-16 sm:w-24 sm:mx-9 mx-3" />
+            <img src="{{ asset('img/logo-hmsi.png') }}" class="w-16 sm:w-24 sm:mx-9 mx-3" />
         </div>
+        <p class="text-white mx-3">{{ auth()->user()->name }}</p>
         <div class="flex-none">
             <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -27,7 +30,10 @@
                 </div>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow-xl bg-base-100 rounded-box w-52">
-                <li><a href="/">Logout</a></li>
+                <form action="/logout" method="post">
+                @csrf
+                    <li><button type="submit">Logout</button></li>
+                </form>
             </ul>
             </div>
         </div>
@@ -51,5 +57,7 @@
         </div>
     </div>
     
+    @yield('script-tiny')
+
 </body>
 </html>

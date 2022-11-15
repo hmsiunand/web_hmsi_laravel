@@ -1,6 +1,10 @@
-@extends('kelola-blog.template-tiny')
+@extends('kelola-blog.template')
 
 @section('title', 'Tambah Blog')
+
+@section('script-token')
+    <script src="{{env('TOKEN_TINY')}}" referrerpolicy="origin"></script>
+@endsection
 
 <!-- tombol yang aktif -->
 @section('tambah-blog-aktif', 'bg-[#570df8]')
@@ -33,4 +37,24 @@
         </form>
     </div>
 
+    @if(session()->has('message'))
+    <div class="toast mr-4" id="toast">
+        <div class="alert alert-success">
+            <div>
+                <span>{{ session()->get('message') }}</span>
+                <button onclick="myFunction()">X</button>
+            </div>
+        </div>
+    </div>
+    @endif
+
+@endsection
+
+@section('script-tiny')
+    <script>
+        tinymce.init({
+          selector: 'textarea',
+          placeholder: "tulis artikel disini"
+        });
+    </script>
 @endsection

@@ -19,16 +19,17 @@
           </div>
           <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div class="card-body">
-              <form action="/kelola-blog" method="post">
+              <form action="/login" method="post">
+                @csrf
                 <div class="flex flex-col">
-                  <label class="label">
+                  <label class="label" for="username">
                     <span class="label-text">Username</span>
                   </label>
-                  <input type="text" placeholder="masukkan username" class="input input-bordered mb-4 invalid:border-red-500 empty:border-slate-300" required/>
-                  <label class="label">
+                  <input type="text" name="email" placeholder="masukkan username" class="input input-bordered mb-4 invalid:border-red-500 empty:border-slate-300 @error('username') input-warning @enderror" id="email" value="{{ old('email') }}" autofocus required/>
+                  <label class="label" for="password">
                     <span class="label-text">Password</span>
                   </label>
-                  <input type="password" placeholder="masukkan password" class="input input-bordered mb-4 invalid:border-red-500 empty:border-slate-300" required/>
+                  <input type="password" name="password" placeholder="masukkan password" class="input input-bordered mb-4 invalid:border-red-500 empty:border-slate-300 @error('password') input-warning @enderror" id="password" value="{{ old('password') }}" required/>
                   <button type="submit" class="btn btn-primary mt-4">Login</button>
                 </div>
               </form>
@@ -36,5 +37,26 @@
           </div>
         </div>
       </div>
+
+      @error('username')
+        <div class="toast mr-4">
+          <div class="alert alert-error">
+            <div>
+              <span>{{ $message }}</span>
+            </div>
+          </div>
+        </div>
+      @enderror
+
+      @if(session()->has('loginError'))
+    <div class="toast mr-4" id="toast">
+        <div class="alert alert-error">
+            <div>
+                <span>{{ session()->get('loginError') }}</span>
+            </div>
+        </div>
+    </div>
+    @endif
+
 </body>
 </html>

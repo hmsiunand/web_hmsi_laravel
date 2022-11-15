@@ -24,35 +24,44 @@
           </div> 
           <div class="flex justify-end flex-1 px-2">
             <div class="flex items-stretch">
-              <ul class="hmsi menu menu-horizontal p-0 hidden sm:flex">
-                <li tabindex="0">
-                  <a>
-                    Tentang
-                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                  </a>
-                  <ul class="p-2 bg-base-100 text-black">
-                    <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
-                    <li><a href="/lambang">Arti Lambang</a></li>
-                    <li><a href="/alumni">Alumni</a></li>
-                  </ul>
-                </li>
-                <li tabindex="0">
-                  <a>
-                    Divisi
-                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                  </a>
-                  <ul class="p-2 bg-base-100 text-black">
-                    <li><a href="/inti">Inti</a></li>
-                    <li><a href="/div-psdm">PSDM</a></li>
-                    <li><a href="/div-humas">Humas</a></li>
-                    <li><a href="/div-kwu">Kewirausahaan</a></li>
-                    <li><a href="/div-psi">PSI</a></li>
-                    <li><a href="/div-rtk">RTK</a></li>
-                    <li><a href="/div-infomed">Infomed</a></li>
-                  </ul>
-                </li>
-                <li><a href="/blog">Blog</a></li>
-              </ul>
+
+              @auth
+                <a role="button" class="btn gap-2" href="/kelola-blog">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" class="fill-current mr-1"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                  Kembali
+                </a>
+              @else
+                <ul class="hmsi menu menu-horizontal p-0 hidden sm:flex">
+                  <li tabindex="0">
+                    <a>
+                      Tentang
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                    </a>
+                    <ul class="p-2 bg-base-100 text-black">
+                      <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
+                      <li><a href="/lambang">Arti Lambang</a></li>
+                      <li><a href="/alumni">Alumni</a></li>
+                    </ul>
+                  </li>
+                  <li tabindex="0">
+                    <a>
+                      Divisi
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                    </a>
+                    <ul class="p-2 bg-base-100 text-black">
+                      <li><a href="/inti">Inti</a></li>
+                      <li><a href="/div-psdm">PSDM</a></li>
+                      <li><a href="/div-humas">Humas</a></li>
+                      <li><a href="/div-kwu">Kewirausahaan</a></li>
+                      <li><a href="/div-psi">PSI</a></li>
+                      <li><a href="/div-rtk">RTK</a></li>
+                      <li><a href="/div-infomed">Infomed</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/blog">Blog</a></li>
+                </ul>
+              @endauth
+
 
               <label for="my-drawer-4" class="drawer-button btn btn-circle swap swap-rotate inline-grid sm:hidden">
     
