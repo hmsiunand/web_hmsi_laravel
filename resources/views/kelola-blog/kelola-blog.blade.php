@@ -23,20 +23,23 @@
                         <img src="{{ asset('img/pen-to-square-solid.svg') }}" alt="edit" class="mx-3">
                     </a>
                     <!-- The button to open modal -->
-                    <label for="my-modal-6" class="modal-button tooltip cursor-pointer" data-tip="hapus blog">
+                    <label for="my-modal-{{$b->id}}" class="modal-button tooltip cursor-pointer" data-tip="hapus blog">
                         <img src="{{ asset('img/trash-can-solid.svg') }}" alt="hapus" class="mx-3">
                     </label><br>
 
                     <!-- Put this part before </body> tag -->
-                    <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+                    <input type="checkbox" id="my-modal-{{$b->id}}" class="modal-toggle" />
                     <div class="modal modal-bottom sm:modal-middle">
                     <div class="modal-box">
                         <h3 class="font-bold text-lg">Hapus Blog</h3>
-                        <p class="py-4">Anda yakin ingin menghapus blog?</p>
+                        <p class="py-4">Anda yakin ingin menghapus blog ini?</p>
+                        <p class="font-light">*blog tidak bisa dikembalikan jika sudah dihapus</p>
                         <div class="modal-action">
-                            <label for="my-modal-6" class="btn">Tidak</label>
-                            <form action="" method="post">
-                                <button type="button" class="btn">Ya</button>
+                            <label for="my-modal-{{$b->id}}" class="btn">Tidak</label>
+                            <form action="/hapus-blog/{{$b->slug}}" method="post">
+                                @method('delete')
+                                @csrf
+                                <button type="submit" class="btn">Ya</button>
                             </form>
                         </div>
                     </div>
@@ -45,6 +48,27 @@
             </div>
         </div>
         @endforeach
+
+        @if(session()->has('message'))
+        <div class="toast mr-4" id="toast">
+            <div class="alert alert-success">
+                <div>
+                    <span>{{ session()->get('message') }}</span>
+                    <!-- <button onclick="myFunction()">X</button> -->
+                </div>
+            </div>
+        </div>
+        @endif
+
     @endif
 
+@endsection
+
+@section('script-tiny')
+    <script>
+      function myFunction() {
+        var x = document.getElementById("toast");
+          x.style.class = "hidden";
+      }
+    </script>
 @endsection

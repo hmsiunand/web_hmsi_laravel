@@ -18,7 +18,7 @@ class BlogFactory extends Factory
             'slug' => $this->faker->slug(),
             'ringkasan' => $this->faker->paragraph(),
             'gambar' => $this->faker->word().".png",
-            // 'artikel' => $this->faker->paragraph(mt_rand(10,20))
+            'penulis' => $this->faker->name(),
             'artikel' => collect($this->faker->paragraphs(mt_rand(6,10)))
                             ->map(fn($p) => "<p>$p</p>")
                             ->implode('')

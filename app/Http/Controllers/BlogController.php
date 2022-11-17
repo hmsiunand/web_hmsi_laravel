@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -31,7 +33,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('kelola-blog.tambah-blog');
     }
 
     /**
@@ -44,15 +46,16 @@ class BlogController extends Controller
     {
         $validatedData = $request->validate([
             'judul' => 'required|min:5|max:100',
-            'slug' => 'required|unique:blogs',
-            'ringkasan' => 'required|max:255'
+            'artikel' => 'required|min:20|max:15000'
         ]);
 
+        $validatedData['gambar'] = "tes-gambar";
+        $validatedData['ringkasan'] = Str::limit(strip_tags($request->artikel), 180);
+        $validatedData['penulis'] = auth()->user()->name;
+
         Blog::create($validatedData);
-
         $request->session()->flash('message', 'Berhasil menambahkan blog!');
-
-        return redirect()->back();
+        return redirect('/kelola-blog');
     }
 
     /**
@@ -86,7 +89,18 @@ class BlogController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        //
+        $validatedData = $request->validate([
+            'judul' => 'required|min:5|max:100',
+            'artikel' => 'required|min:20|max:15000'
+        ]);
+
+        $validatedData['gambar'] = "tes-gambar";
+        $validatedData['ringkasan'] = Str::limit(strip_tags($request->artikel), 180);
+        $validatedData['penulis'] = auth()->user()->name;
+
+        Blog::where('id', $blog->id)->update($validatedData);
+        $request->session()->flash('message', 'Berhasil mengedit blog!');
+        return redirect('/kelola-blog');
     }
 
     /**
@@ -97,6 +111,7 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        //
+        Blog::destroy($blog->id);
+        return redirect('/kelola-blog')->with('message', 'Blog berhasil dihapus!');
     }
 }

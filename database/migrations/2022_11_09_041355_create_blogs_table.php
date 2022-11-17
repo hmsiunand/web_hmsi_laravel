@@ -20,6 +20,7 @@ class CreateBlogsTable extends Migration
             $table->string('ringkasan');
             $table->string('gambar');
             $table->text('artikel');
+            $table->string('penulis');
             $table->timestamps();
         });
     }

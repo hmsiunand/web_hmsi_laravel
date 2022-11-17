@@ -1747,6 +1747,13 @@ body[dir="rtl"] .checkbox:checked,
 .input-warning:focus {
   outline: 2px solid hsl(var(--wa));
 }
+.input-error {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--er) / var(--tw-border-opacity));
+}
+.input-error:focus {
+  outline: 2px solid hsl(var(--er));
+}
 .input-disabled, 
   .input[disabled] {
   cursor: not-allowed;
@@ -2456,6 +2463,10 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -2729,6 +2740,9 @@ body[dir="rtl"] .checkbox:checked,
 .scroll-smooth {
   scroll-behavior: smooth;
 }
+.whitespace-pre {
+  white-space: pre;
+}
 .whitespace-pre-wrap {
   white-space: pre-wrap;
 }
@@ -2959,6 +2973,10 @@ body[dir="rtl"] .checkbox:checked,
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -2968,8 +2986,14 @@ body[dir="rtl"] .checkbox:checked,
 .font-semibold {
   font-weight: 600;
 }
-.capitalize {
-  text-transform: capitalize;
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.italic {
+  font-style: italic;
 }
 .leading-7 {
   line-height: 1.75rem;
@@ -3484,6 +3508,11 @@ body[dir="rtl"] .checkbox:checked,
 
   .md\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }

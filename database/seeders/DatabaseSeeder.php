@@ -23,9 +23,9 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('admin')
         ]);
 
-        Blog::factory(10)->create();
+        Blog::factory(5)->create();
         
-        Saran::factory(10)->create();
+        Saran::factory(5)->create();
 
         // Blog::create([
         //     'judul' => 'Apa itu lorem ipsum?',
