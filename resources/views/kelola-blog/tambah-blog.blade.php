@@ -6,51 +6,60 @@
     <script src="{{env('TOKEN_TINY')}}" referrerpolicy="origin"></script>
 @endsection
 
-<!-- tombol yang aktif -->
 @section('tambah-blog-aktif', 'bg-[#570df8]')
 
 @section('content')
         
     <div class="form-control w-full max-w-6xl px-4 justify-center">
-        <form action="/tambah-blog" method="post">
+        <form action="/tambah-blog" method="post" enctype="multipart/form-data">
             @csrf
             <label class="label">
                 <span class="text-xl font-bold text-neutral-content">Judul</span>
             </label>
-            <input type="text" name="judul" placeholder="Masukkan judul blog" value="{{ old('judul') }}" required class="input input-bordered w-full @error('judul') input-error @enderror" />
+            <input type="text" name="judul" placeholder="Masukkan judul blog" value="{{ old('judul') }}" class="input input-bordered w-full @error('judul') input-error @enderror" required/>
 
             @error('judul')
                 <p class="text-white text-xs">{{ $message }}</p>
             @enderror
 
-            <label class="label">
-                <span  class="text-xl font-bold text-neutral-content mt-4" title="jangan masukin file selain gambar yaa😃">Gambar (.png .jpg .jpeg)</span>
+            <label class="label" for="gambar">
+                <span  class="text-xl font-bold text-neutral-content mt-4" title="maksimal 1024kb, jangan masukin file selain gambar yaa😃">Gambar (.png .jpg .jpeg)</span>
             </label>
-
-            <input type="file" name="gambar" title="jangan masukin file selain gambar yaa😃" class="block w-full text-sm text-neutral-content max-w-xs
-                file:mr-4 file:py-2 file:px-4
-                file:rounded-full file:border-0
-                file:text-sm file:font-semibold
-                file:bg-violet-50 file:text-violet-700
-                hover:file:bg-violet-100
-            "/>
-
-            <!-- <input type="hidden" name="penulis" value="{{ auth()->user()->name }}"> -->
-
+            
+            <input name="gambar" type="file" class="file-input file-input-sm w-full max-w-xs @error('gambar') file-input-error @enderror" title="maksimal 1024kb, jangan masukin file selain gambar yaa😃" id="gambar" required onchange="previewImage()"/>
+            
             @error('gambar')
-                <p class="text-white text-xs">{{ $message }}</p>
+            <p class="text-white text-xs">{{ $message }}</p>
             @enderror
 
+            <img class="img-preview mt-4 max-h-96" src="" alt="">
+            
             <label class="label">
                 <span class="text-xl font-bold text-neutral-content mt-4">Artikel</span>
             </label> 
-            <textarea required name="artikel">{{ old('artikel') }}</textarea>
+            <textarea name="artikel">{{ old('artikel') }}</textarea>
 
             @error('artikel')
                 <p class="text-white text-xs">{{ $message }}</p>
             @enderror
             <br>
-            <button type="submit" class="btn btn-primary w-full sm:btn-wide">Post</button>
+
+            <!-- The button to open modal -->
+            <label for="modal-konfirmasi" class="btn btn-primary w-full sm:btn-wide mt-5 mb-8">Post</label>
+
+            <!-- Put this part before </body> tag -->
+            <input type="checkbox" id="modal-konfirmasi" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg">Tambah Blog</h3>
+                <p class="py-4">Anda yakin ingin menambahkan blog ini?</p>
+                <div class="modal-action">
+                    <label for="modal-konfirmasi" class="btn">Tidak</label>
+                    <button type="submit" class="btn">Ya</button>
+                </div>
+            </div>
+            </div>
+
         </form>
     </div>
 
@@ -65,5 +74,23 @@
             menubar: 'edit view insert format tools help',
             toolbar: 'undo redo | blocks | ' + 'bold italic backcolor | alignleft aligncenter ' + 'alignright alignjustify | bullist numlist outdent indent | ' + 'removeformat | help',
         });
+
+
+        function previewImage() {
+            const gambar = document.querySelector('#gambar');
+            const gambarPreview = document.querySelector('.img-preview');
+
+            gambarPreview.style.display = 'block';
+
+            const oFReader = new FileReader();
+            oFReader.readAsDataURL(gambar.files[0]);
+
+            oFReader.onload = function(oFREvent) {
+                gambarPreview.src = oFREvent.target.result;
+            }
+
+        }
+
+
     </script>
 @endsection

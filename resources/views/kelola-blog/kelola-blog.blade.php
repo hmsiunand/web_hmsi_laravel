@@ -14,10 +14,17 @@
     @else
         @foreach($blog as $b)
         <div class="m-4 card rounded-xl lg:w-96 max-w-xs max-h-fit bg-base-100 shadow-xl text-justify">
-            <figure><img src="{{ asset('img/fti.jpg') }}" alt="{{$b->gambar}}" class="max-h-min"></figure>
+        <figure>    
+        @if($b->gambar)
+            <img src="{{ asset('storage/'.$b->gambar) }}" alt="$b->judul" class="max-h-min">
+        @else
+            <img src="{{ asset('img/fti.jpg') }}" alt="$b->judul" class="max-h-min">
+        @endif
+        </figure>
             <div class="card-body p-5">
                 <a href="/blog/{{$b->slug}}" class="card-title justify-start hover:underline" title="klik untuk melihat lebih lanjut">{{$b->judul}}</a>
-                <p class="">{{$b->created_at}}</p>
+                <p class="whitespace-pre-wrap">Diposting  @ {{$b->created_at}} <br>Diperbarui @ {{$b->updated_at}} </p>
+                
                 <div class="py-1 flex justify-end">
                     <a href="/edit-blog/{{$b->slug}}" class="tooltip" data-tip="edit blog">
                         <img src="{{ asset('img/pen-to-square-solid.svg') }}" alt="edit" class="mx-3">
@@ -36,7 +43,7 @@
                         <p class="font-light">*blog tidak bisa dikembalikan jika sudah dihapus</p>
                         <div class="modal-action">
                             <label for="my-modal-{{$b->id}}" class="btn">Tidak</label>
-                            <form action="/hapus-blog/{{$b->slug}}" method="post">
+                            <form action="/hapus-blog/{{$b->id}}" method="post">
                                 @method('delete')
                                 @csrf
                                 <button type="submit" class="btn">Ya</button>

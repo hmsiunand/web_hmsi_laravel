@@ -18,7 +18,11 @@
 
         <div class="navbar text-neutral-content sticky top-0 z-10 bg-[#23153c]">
           <div class="flex-1 px-2 lg:flex-none">
+            @auth
+            <a href="/kelola-blog">
+            @else
             <a href="/">
+            @endauth
               <img src="{{ asset('img/logo-hmsi.png') }}" class="w-24 sm:w-28 sm:mx-9 mx-0" />
             </a>
           </div> 

@@ -18,7 +18,13 @@
             @else
                 @foreach($blog as $b)
                 <div class="m-4 card rounded-xl lg:w-96 max-w-sm max-h-min bg-base-100 shadow-xl text-justify">
-                    <figure><img src="./img/fti.jpg" alt="{{$b->gambar}}" class="max-h-min"></figure>
+                    <figure>
+                        @if($b->gambar)
+                            <img src="{{ asset('storage/'.$b->gambar) }}" alt="$b->judul" class="max-h-min">
+                        @else
+                            <img src="{{ asset('img/fti.jpg') }}" alt="$b->judul" class="max-h-min">
+                        @endif
+                    </figure>
                     <div class="card-body p-5">
                         <a href="/blog/{{$b->slug}}" class="card-title font-bold justify-start hover:underline" title="klik untuk melihat lebih lanjut">{{$b->judul}}</a>
                         <p class="">{{$b->created_at->diffForHumans()}}</p>

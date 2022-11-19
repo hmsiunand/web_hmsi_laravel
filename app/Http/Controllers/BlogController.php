@@ -6,6 +6,7 @@ use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -22,7 +23,7 @@ class BlogController extends Controller
 
     public function index_kelola()
     {
-        $blog = Blog::select('judul', 'slug', 'ringkasan', 'gambar', 'created_at')->latest()->get();
+        $blog = Blog::latest()->get();
         return view("kelola-blog.kelola-blog", compact('blog'));
     }
 
@@ -46,11 +47,14 @@ class BlogController extends Controller
     {
         $validatedData = $request->validate([
             'judul' => 'required|min:5|max:100',
+            'gambar' => 'required|image|file|max:1024',
             'artikel' => 'required|min:20|max:15000'
         ]);
 
-        $validatedData['gambar'] = "tes-gambar";
-        $validatedData['ringkasan'] = Str::limit(strip_tags($request->artikel), 180);
+        $request->artikel = str_replace("&nbsp;", "", strip_tags($request->artikel));
+
+        $validatedData['gambar'] = $request->file('gambar')->store('gambar-blog');
+        $validatedData['ringkasan'] = Str::limit(str_replace("&nbsp;", "", strip_tags($request->artikel)), 180);
         $validatedData['penulis'] = auth()->user()->name;
 
         Blog::create($validatedData);
@@ -91,11 +95,18 @@ class BlogController extends Controller
     {
         $validatedData = $request->validate([
             'judul' => 'required|min:5|max:100',
+            'gambar' => 'image|file|max:1024',
             'artikel' => 'required|min:20|max:15000'
         ]);
 
-        $validatedData['gambar'] = "tes-gambar";
-        $validatedData['ringkasan'] = Str::limit(strip_tags($request->artikel), 180);
+        if($request->file('gambar')){
+            if($request->gambarlama){
+                Storage::delete($request->gambarlama);
+            }
+            $validatedData['gambar'] = $request->file('gambar')->store('gambar-blog');
+        }
+
+        $validatedData['ringkasan'] = Str::limit(str_replace("&nbsp;", "", strip_tags($request->artikel)), 180);
         $validatedData['penulis'] = auth()->user()->name;
 
         Blog::where('id', $blog->id)->update($validatedData);
@@ -111,6 +122,9 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
+        if($blog->gambar){
+            Storage::delete($blog->gambar);
+        }
         Blog::destroy($blog->id);
         return redirect('/kelola-blog')->with('message', 'Blog berhasil dihapus!');
     }

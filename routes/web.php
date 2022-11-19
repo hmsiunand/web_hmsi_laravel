@@ -33,7 +33,7 @@ Route::get('/inti', function () {return view('divisi.inti');})->middleware('gues
 //saran
 Route::get('/kotak-pesan', [SaranController::class, 'index'])->middleware('auth');
 Route::post('/kirimsaran', [SaranController::class, 'store'])->middleware('guest');
-Route::delete('/hapus-pesan/{saran}', [SaranController::class, 'destroy']);
+Route::delete('/hapus-pesan/{saran}', [SaranController::class, 'destroy'])->middleware('auth');
 
 //  blog
 Route::get('/blog', [BlogController::class, 'index']);
@@ -42,8 +42,8 @@ Route::get('/edit-blog/{blog:slug}', [BlogController::class, 'edit'])->middlewar
 Route::get('/kelola-blog', [BlogController::class, 'index_kelola'])->middleware('auth');
 Route::get('/tambah-blog', [BlogController::class, 'create'])->middleware('auth');
 Route::post('/tambah-blog', [BlogController::class, 'store'])->middleware('auth');
-Route::delete('/hapus-blog/{blog:slug}', [BlogController::class, 'destroy'])->middleware('auth');
-Route::put('/edit-blog/{blog:slug}', [BlogController::class, 'update'])->middleware('auth');
+Route::delete('/hapus-blog/{blog}', [BlogController::class, 'destroy'])->middleware('auth');
+Route::put('/edit-blog/{blog}', [BlogController::class, 'update'])->middleware('auth');
 
 //auth
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');

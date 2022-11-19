@@ -2,7 +2,7 @@
 
 @section('title') 
     {{$blog->judul}} | Blog
-@endsection  <!-- judul blognya ku letak disini, ntar disesuaiin aja -->
+@endsection
 
 @section('content')
         
@@ -13,7 +13,12 @@
         </div>
 
         <section class="px-5 sm:px-12 md:px-28 lg:px-48 2xl:px-96 flex flex-col justify-center">
-        <img src="{{ asset('img/fti.jpg') }}" alt="{{$blog->gambar}}">
+            
+        @if($blog->gambar)
+            <img src="{{ asset('storage/'.$blog->gambar) }}" alt="{{$blog->judul}}" class="max-h-min">
+        @else
+            <img src="{{ asset('img/fti.jpg') }}" alt="{{$blog->judul}}" class="max-h-min">
+        @endif
         <article class="my-8 text-neutral-content md:text-xl">
             {!! $blog->artikel !!}
         </article>

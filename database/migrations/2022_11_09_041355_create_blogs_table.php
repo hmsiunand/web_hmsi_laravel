@@ -18,7 +18,7 @@ class CreateBlogsTable extends Migration
             $table->string('judul');
             $table->string('slug')->unique();
             $table->string('ringkasan');
-            $table->string('gambar');
+            $table->string('gambar')->nullable();
             $table->text('artikel');
             $table->string('penulis');
             $table->timestamps();
