@@ -3,7 +3,7 @@
 @section('title', 'Tambah Blog')
 
 @section('script-token')
-    <script src="{{env('TOKEN_TINY')}}" referrerpolicy="origin"></script>
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
 @endsection
 
 @section('tambah-blog-aktif', 'bg-[#570df8]')
@@ -75,7 +75,6 @@
             toolbar: 'undo redo | blocks | ' + 'bold italic backcolor | alignleft aligncenter ' + 'alignright alignjustify | bullist numlist outdent indent | ' + 'removeformat | help',
         });
 
-
         function previewImage() {
             const gambar = document.querySelector('#gambar');
             const gambarPreview = document.querySelector('.img-preview');
@@ -88,9 +87,7 @@
             oFReader.onload = function(oFREvent) {
                 gambarPreview.src = oFREvent.target.result;
             }
-
         }
-
 
     </script>
 @endsection

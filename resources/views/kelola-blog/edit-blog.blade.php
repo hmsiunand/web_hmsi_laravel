@@ -3,7 +3,7 @@
 @section('title', 'Edit Blog')
 
 @section('script-token')
-    <script src="{{env('TOKEN_TINY')}}" referrerpolicy="origin"></script>
+    <script src="{{ asset('js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
 @endsection
 
 <!-- tombol yang aktif -->
