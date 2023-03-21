@@ -1,6 +1,6 @@
 @extends('header-footer')
 
-@section('title', 'Tentang HMSI')
+@section('title', 'Berkunjung ke HMSI')
 
 @section('content')
         
@@ -9,7 +9,7 @@
       <div class="hero-content text-center">
         <div class="max-w-5xl">
           <div class="text-center py-6">
-            <p class="text-3xl sm:text-5xl py-1 text-white blog-tebal">Tentang HMSI</p>
+            <p class="text-3xl sm:text-5xl py-1 text-white blog-tebal">Berkunjung ke HMSI</p>
           </div>
           <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
           <!-- <h1 class="text-3xl sm:text-5xl font-bold mb-9">Tentang HMSI</h1>

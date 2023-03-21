@@ -45,6 +45,7 @@
                       <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
                       <li><a href="/lambang">Arti Lambang</a></li>
                       <li><a href="/alumni">Alumni</a></li>
+                      <li><a href="/visit">Berkunjung ke HMSI</a></li>
                     </ul>
                   </li>
                   <li tabindex="0">
@@ -55,11 +56,12 @@
                     <ul class="p-2 bg-base-100 text-black">
                       <li><a href="/inti">Inti</a></li>
                       <li><a href="/div-psdm">PSDM</a></li>
-                      <li><a href="/div-humas">Humas</a></li>
-                      <li><a href="/div-kwu">Kewirausahaan</a></li>
+                      <li><a href="/div-internal">Internal</a></li>
+                      <li><a href="/div-eksternal">Eksternal</a></li>
+                      <li><a href="/div-bikraf">Bisnis Kreatif</a></li>
                       <li><a href="/div-psi">PSI</a></li>
                       <li><a href="/div-rtk">RTK</a></li>
-                      <li><a href="/div-infomed">Infomed</a></li>
+                      <li><a href="/div-medkraf">Media Kreatif</a></li>
                     </ul>
                   </li>
                   <li><a href="/blog">Blog</a></li>
@@ -119,6 +121,7 @@
                 <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
                 <li><a href="/lambang">Arti Lambang</a></li>
                 <li><a href="/alumni">Alumni</a></li>
+                <li><a href="/visit">Berkunjung ke HMSI</a></li>
               </ul>
             </div>
           </div>
@@ -131,11 +134,12 @@
               <ul>
                 <li><a href="/inti">Inti</a></li>
                 <li><a href="/div-psdm">PSDM</a></li>
-                <li><a href="/div-humas">Humas</a></li>
-                <li><a href="/div-kwu">Kewirausahaan</a></li>
+                <li><a href="/div-internal">Internal</a></li>
+                <li><a href="/div-eksternal">Eksternal</a></li>
+                <li><a href="/div-bikraf">Bisnis Kreatif</a></li>
                 <li><a href="/div-psi">PSI</a></li>
                 <li><a href="/div-rtk">RTK</a></li>
-                <li><a href="/div-infomed">Infomed</a></li>
+                <li><a href="/div-medkraf">Media Kreatif</a></li>
               </ul>
             </div>
           </div>

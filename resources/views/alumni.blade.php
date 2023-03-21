@@ -1,22 +1,146 @@
 @extends('header-footer')
 
-@section('title', 'Alumni HMSI')
+@section('title', 'Alumni')
 
 @section('content')
 
   <main class="px-4">
+  <section> <!-- 2022 -->
+      <div class="text-center py-6">
+        <p class="text-3xl sm:text-5xl py-1 text-white blog-tebal">2022</p>
+      </div>
+      <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
+                  
+      <div class="text-center mt-6 mb-10">
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Presidium Inti</h2>
+              <p><b>Ketua Umum </b>       : Muhammad Farhan Zuhdi</p>
+              <p><b>Wakil Ketua Umum</b> 	: M. Reza Rizki Rahmadi</p>
+              <p><b>Sekretaris Umum</b>   : Annisha Aprillya</p>
+              <p><b>Bendahara Umum</b>  	: Raidha Qatrunnada</p>
+            </div>
+          </div>
+        <br>
+<!-- <br class="hidden lg:block"> -->
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Informasi dan Media</h2>
+              <p><b> Kepala Divisi</b>      : Fadhilla Islamita Putri</p>
+              <p><b> Sekretaris Divisi</b>  : Lisca Angriani</p>
+              <p><b> Bendahara Divisi</b>   : Distifia Oktari</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Siti Nina Azwalia Tanjung</li>
+                <li>Fauzan Maizardi</li>
+                <li>Fathia Rahma Nazhifa</li>
+                <li>Rafiqah</li>
+                <li>Muhammad Rayhan Rizaldi</li>
+                <li>Lara Busyanil</li>
+                <br class="hidden sm:inline">
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div>
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Pengembangan Skill dan Intelektual</h2>
+              <p><b> Kepala Divisi</b>      : Iqbal Manazil Yuni</p>
+              <p><b> Sekretaris Divisi</b>  : Riska Shifa Salsabilla</p>
+              <p><b> Bendahara Divisi</b>   : Rahmadina</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Ginda Teguh Imani</li>
+                <li>Nada Safarina</li>
+                <li>Kemal Muhammad Hiero</li>
+                <li>Hagi Siraj Sumanta</li>
+                <li>Alif Abdul Rauf</li>
+                <br class="hidden sm:inline">
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div> 
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi PSDM</h2>
+              <p><b> Kepala Divisi</b>      : Ahmad Fauzan Alqadri</p>
+              <p><b> Sekretaris Divisi</b>  : Reysha Irsyalina</p>
+              <p><b> Bendahara Divisi</b>   : Winanda A. Harisya</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Boby Darmawan</li>
+                <li>Muhammad Farhan. A</li>
+                <li>Doni Hamdani</li>
+                <li>Muhammad Idris</li>
+                <li>Vallen Adithya Rekhsana</li>
+                <li>Muhammad Zaim Milzam</li>
+                <li>Muhammad Yudhistira</li>
+                <li>Siti Nur Aisah</li>
+              </ul>
+            </div>
+          </div>
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
+              <p><b> Kepala Divisi</b>      : Muhammad Afif</p>
+              <p><b> Sekretaris Divisi</b>  : Desrilia Putri Utami</p>
+              <p><b> Bendahara Divisi</b>   : Sri Ulfa Berliani</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Dean Fisabil Andwi</li>
+                <li>Radithya Romero Al Giffary</li>
+                <li>Nadilla Saraswati</li>
+                <li>Faradila Suwandi</li>
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div>
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Hubungan Masyarakat</h2>
+              <p><b> Kepala Divisi</b>      : Salsabila Ramadhani Putri</p>
+              <p><b> Sekretaris Divisi</b>  : Deyola Fadwa Shifana</p>
+              <p><b> Bendahara Divisi</b>   : Delicia Syifa Maghfira</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Shefilla Raisya Razade Stevano</li>
+                <li>Zuha Bima Alfaruq</li>
+                <li>Thomas Akram Ferdinan</li>
+                <li>Muhammad Erlangga Adi Nugraha</li>
+                <li>Faiz Abdullah</li>
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div> 
+          <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title font-bold justify-center">Divisi Kewirausahaan</h2>
+              <p><b> Kepala Divisi</b>      : M. Kevin Beslia Fadillah</p>
+              <p><b> Sekretaris Divisi</b>  : Ananda Fitria</p>
+              <p><b> Bendahara Divisi</b>   : Ruth Emeralda Raihan</p>
+              <p><b> Anggota</b> : </p>
+              <ul>
+                <li>Muhammad Al Hafiz</li>
+                <li>Gita Putri</li>
+                <li>Tri Ayunia Patma Lubis</li>
+                <li>Baitul Azizah</li>
+                <li>Taufik Hidayat</li>
+                <br class="hidden sm:inline">
+              </ul>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
     <section> <!-- 2021 -->
       <div class="text-center py-6">
         <p class="text-3xl sm:text-5xl py-1 text-white blog-tebal">2021</p>
       </div>
       <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
                   
-      <!-- <h1 class="text-3xl sm:text-5xl font-bold text-white">2021/2022</h1> -->
-        
       <div class="text-center mt-6 mb-10">
-        <a href="https://www.instagram.com/p/Cazf3WbJN49/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Presidium Inti</h2>
               <p><b>Ketua Umum </b>       : M Harley Adinama</p>
@@ -25,11 +149,8 @@
               <p><b>Bendahara Umum</b>  	: Distifia Oktari</p>
             </div>
           </div> 
-        </a>
         <br>
-        <a href="https://www.instagram.com/p/CazZ0JqJhNU/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kemahasiswaan</h2>
               <p><b> Kepala Divisi</b>      : Ghanni Arrasyid Z</p>
@@ -51,10 +172,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/CazZ80tJh0l/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Hubungan Masyarakat</h2>
               <p><b> Kepala Divisi</b>      : Muhammad Rafi</p>
@@ -76,11 +194,8 @@
               </ul>
             </div>
           </div> 
-        </a>
         <br class="hidden lg:block">
-        <a href="https://www.instagram.com/p/CazcLnUppy5/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
               <p><b> Kepala Divisi</b>      : Lathifatuzikra Suhairi</p>
@@ -97,10 +212,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/CazZwHRpEnl/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Keprofesian dan IT</h2>
               <p><b> Kepala Divisi</b>      : Ahmad Fauzan</p>
@@ -118,10 +230,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/CazZ44tJm-9/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kewirausahaan</h2>
               <p><b> Kepala Divisi</b>      : Hayatul Annisa Basyiroh</p>
@@ -138,8 +247,7 @@
                 <br class="hidden sm:inline">
               </ul>
             </div>
-          </div> 
-        </a>  
+          </div>   
       </div>
     </section>
 
@@ -149,12 +257,8 @@
       </div>
       <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
                   
-      <!-- <h1 class="text-3xl sm:text-5xl font-bold text-white">2021/2022</h1> -->
-        
       <div class="text-center mt-6 mb-10">
-        <a href="https://www.instagram.com/p/B7Dn31Apc3E/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Presidium Inti</h2>
               <p><b>Ketua Umum </b>       : Ronny Kurniawan</p>
@@ -163,11 +267,8 @@
               <p><b>Bendahara Umum</b>  	: Athifah Zahra</p>
             </div>
           </div> 
-        </a>
         <br>
-        <a href="https://www.instagram.com/p/B7DnfjpJd_R/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kemahasiswaan</h2>
               <p><b> Kepala Divisi</b>      : Muhammad Albi Isra</p>
@@ -180,10 +281,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/B7DW0HCJrOu/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Hubungan Masyarakat</h2>
               <p><b> Kepala Divisi</b>      : Erick Okta Wirdana</p>
@@ -197,11 +295,8 @@
               </ul>
             </div>
           </div> 
-        </a>
         <br class="hidden lg:block">
-        <a href="https://www.instagram.com/p/B7DWlk9JABH/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
               <p><b> Kepala Divisi</b>      : Prima Prasetyo</p>
@@ -214,10 +309,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/B7DmrywpiHb/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Keprofesian dan IT</h2>
               <p><b> Kepala Divisi</b>      : Vicky Ariga Elsayrafl</p>
@@ -231,10 +323,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/B7Dm622pdVV/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kewirausahaan</h2>
               <p><b> Kepala Divisi</b>      : Rifqi Hadi Putra</p>
@@ -247,8 +336,7 @@
                 <li>Yolanda Apricilia</li>
               </ul>
             </div>
-          </div> 
-        </a>  
+          </div>   
       </div>
     </section>
     
@@ -259,9 +347,7 @@
       <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
                                 
       <div class="text-center mt-6 mb-10">
-        <a href="https://www.instagram.com/p/BuJhmJXHTRe/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Presidium Inti</h2>
               <p><b>Ketua Umum </b>       : Gilang Priyatna Ferdana</p>
@@ -272,11 +358,8 @@
               <p><b>Bendahara 2</b>  	: Athifah Zahra</p>
             </div>
           </div> 
-        </a>
         <br>
-        <a href="https://www.instagram.com/p/BuJhA6QnbVA/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kemahasiswaan</h2>
               <p><b> Kepala Divisi</b>      : Dira Yosfiranda</p>
@@ -289,10 +372,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/BuJhJINn9Mr/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Hubungan Masyarakat</h2>
               <p><b> Kepala Divisi</b>      : Ahmad Fadhil</p>
@@ -306,11 +386,8 @@
               </ul>
             </div>
           </div> 
-        </a>
         <br class="hidden lg:block">
-        <a href="https://www.instagram.com/p/BuJhcoyH7Zj/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
               <p><b> Kepala Divisi</b>      : Syukri Rahmat Ilahi</p>
@@ -323,10 +400,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/BuJg50enpvN/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Keprofesian dan IT</h2>
               <p><b> Kepala Divisi</b>      : Aulia Anshari Fathurrahman</p>
@@ -340,10 +414,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/BuJgrzgHU1n/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kewirausahaan</h2>
               <p><b> Kepala Divisi</b>      : Astri</p>
@@ -356,8 +427,7 @@
                 <li>Wahyu Febrian Pratama Bayu Khan</li>
               </ul>
             </div>
-          </div> 
-        </a>  
+          </div>   
       </div>
     </section>
     
@@ -368,9 +438,7 @@
       <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
                                 
       <div class="text-center mt-6 mb-10">
-        <a href="https://www.instagram.com/p/Bd941UYn4sT/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Presidium Inti</h2>
               <p><b>Ketua Umum </b>       : Tata Bayu Amarta</p>
@@ -381,11 +449,8 @@
               <p><b>Bendahara 2</b>  	: Nor Adzillah Adya</p>
             </div>
           </div> 
-        </a>
         <br>
-        <a href="https://www.instagram.com/p/Bd92qkznT56/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kemahasiswaan</h2>
               <p><b> Kepala Divisi</b>      : M Imam Sutria</p>
@@ -400,10 +465,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/Bd94X_hnnCN/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Hubungan Masyarakat</h2>
               <p><b> Kepala Divisi</b>      : Ade Indra</p>
@@ -418,11 +480,8 @@
               </ul>
             </div>
           </div> 
-        </a>
         <br class="hidden lg:block">
-        <a href="https://www.instagram.com/p/Bd93siJHp-5/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
               <p><b> Kepala Divisi</b>      : Ahmad Fauzan Hasbullah</p>
@@ -437,10 +496,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/Bd93ba6Hh8E/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Keprofesian dan IT</h2>
               <p><b> Kepala Divisi</b>      : Wahyu Ade Pratama</p>
@@ -456,10 +512,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/Bd93akonrNV/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kewirausahaan</h2>
               <p><b> Kepala Divisi</b>      : Ferina Dwi Fitri</p>
@@ -474,8 +527,7 @@
                 <br class="hidden sm:inline">
               </ul>
             </div>
-          </div> 
-        </a>  
+          </div>   
       </div>
     </section>
     
@@ -486,9 +538,7 @@
       <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
                                 
       <div class="text-center mt-6 mb-10">
-        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Presidium Inti</h2>
               <p><b>Ketua Umum </b>       : Rafael Dinur</p>
@@ -499,11 +549,8 @@
               <p><b>Bendahara 2</b>  	: Marchella Anrisya</p>
             </div>
           </div> 
-        </a>
         <br>
-        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kemahasiswaan</h2>
               <p><b> Kepala Divisi</b>      : Rafki Azim</p>
@@ -516,10 +563,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Hubungan Masyarakat</h2>
               <p><b> Kepala Divisi</b>      : Galuh Permana</p>
@@ -532,11 +576,8 @@
               </ul>
             </div>
           </div> 
-        </a>
         <br class="hidden lg:block">
-        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
               <p><b> Kepala Divisi</b>      : Rahmat Sandhy</p>
@@ -549,10 +590,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi IT</h2>
               <p><b> Kepala Divisi</b>      : Iqbal Nawazaki</p>
@@ -566,10 +604,7 @@
               </ul>
             </div>
           </div> 
-        </a>
-        <a href="https://www.instagram.com/p/BPoj4naBqWk/" target="_blank">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
-            <!-- <figure></figure> -->
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Kewirausahaan</h2>
               <p><b> Kepala Divisi</b>      : M. Rocky Kurniawan</p>
@@ -582,8 +617,7 @@
                 <br class="hidden sm:inline">
               </ul>
             </div>
-          </div> 
-        </a>  
+          </div>   
       </div>
     </section>
 

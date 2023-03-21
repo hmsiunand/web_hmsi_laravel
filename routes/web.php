@@ -20,11 +20,13 @@ Route::get('/', function () {return view('index');})->name('beranda')->middlewar
 Route::get('/alumni', function () {return view('alumni');})->middleware('guest');
 Route::get('/lambang', function () {return view('lambang');})->middleware('guest');
 Route::get('/tentang-hmsi', function () {return view('tentang-hmsi');})->middleware('guest');
+Route::get('/visit', function () {return view('visit');})->middleware('guest');
 
 // divisi
-Route::get('/div-humas', function () {return view('divisi.div-humas');})->middleware('guest');
-Route::get('/div-infomed', function () {return view('divisi.div-infomed');})->middleware('guest');
-Route::get('/div-kwu', function () {return view('divisi.div-kwu');})->middleware('guest');
+Route::get('/div-eksternal', function () {return view('divisi.div-eksternal');})->middleware('guest');
+Route::get('/div-internal', function () {return view('divisi.div-internal');})->middleware('guest');
+Route::get('/div-medkraf', function () {return view('divisi.div-medkraf');})->middleware('guest');
+Route::get('/div-bikraf', function () {return view('divisi.div-bikraf');})->middleware('guest');
 Route::get('/div-psdm', function () {return view('divisi.div-psdm');})->middleware('guest');
 Route::get('/div-psi', function () {return view('divisi.div-psi');})->middleware('guest');
 Route::get('/div-rtk', function () {return view('divisi.div-rtk');})->middleware('guest');
