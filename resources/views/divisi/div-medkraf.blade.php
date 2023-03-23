@@ -12,9 +12,7 @@
         <div class="hero min-h-screen">
             <div class="hero-content flex-col lg:flex-row px-5 sm:px-16 2xl:px-0">
                 <div class="flex justify-center">
-                    <div class="m-2 card lg:w-80 max-w-sm bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                    <img src="./img/pengurus/medkraf/medkraf.jpg" alt="divisi medkraf" class="max-w-xs rounded-lg shadow-2xl" loading="lazy"/>
-                    </div>
+                    <img src="./img/pengurus/medkraf/medkraf.jpg" alt="divisi medkraf" class="max-w-xs rounded-lg shadow-2xl sm:hover:-translate-y-2 duration-100" loading="lazy"/>
                 </div>
                 <div class=" text-neutral-content px-3 max-w-full text-center lg:text-left">
                     <p class="text-lg sm:text-xl font-bold">Apa itu divisi Media Kreatif?</p>
@@ -35,14 +33,14 @@
 
         <div class="flex flex-wrap justify-evenly pb-6">
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/medkraf/IMG_8317.jpg" alt="kadiv medkraf" class="max-h-min"></figure>
+                <figure><img src="./img/pengurus/medkraf/IMG_8317.jpg" alt="kadiv medkraf" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Fathih Muhammad Alfi</h2>
                     <p>Ketua Divisi</p>
                 </div>
             </div>
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/medkraf/IMG_8486.jpg" alt="sekbend medkraf" class="max-h-min"></figure>
+                <figure><img src="./img/pengurus/medkraf/IMG_8486.jpg" alt="sekbend medkraf" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Akmal Rafi Nursya’bani</h2>
                     <p>Sekretaris-Bendahara</p>
