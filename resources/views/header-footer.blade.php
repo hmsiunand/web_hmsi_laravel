@@ -41,7 +41,7 @@
                       Tentang
                       <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                     </a>
-                    <ul class="p-2 bg-base-100 text-black">
+                    <ul class="p-2 bg-base-100 text-black rounded-box">
                       <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
                       <li><a href="/lambang">Arti Lambang</a></li>
                       <li><a href="/alumni">Alumni</a></li>
@@ -53,7 +53,7 @@
                       Divisi
                       <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                     </a>
-                    <ul class="p-2 bg-base-100 text-black">
+                    <ul class="p-2 bg-base-100 text-black rounded-box">
                       <li><a href="/inti">Inti</a></li>
                       <li><a href="/div-psdm">PSDM</a></li>
                       <li><a href="/div-internal">Internal</a></li>
