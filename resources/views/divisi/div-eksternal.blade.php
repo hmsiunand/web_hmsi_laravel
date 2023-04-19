@@ -32,14 +32,14 @@
 
         <div class="flex flex-wrap justify-evenly pb-6">
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/eksternal/IMG_8004.jpg" alt="kadiv eksternal" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="./img/pengurus/eksternal/kadiv-eksternal.jpg" alt="kadiv eksternal" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                 <h2 class="card-title justify-center">Zuha Bima Alfaruq</h2>
                 <p>Ketua Divisi</p>
                 </div>
             </div>
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/eksternal/IMG_7997.jpg" alt="sekbend eksternal" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="./img/pengurus/eksternal/sekbend-eksternal.jpg" alt="sekbend eksternal" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Shefilla Raisya Razade Stevano</h2>
                     <p>Sekretaris-Bendahara</p>

@@ -14,16 +14,16 @@
         <p class="hmsi text-3xl sm:text-5xl text-white py-3">Ketua dan Wakil Ketua</p>
         <div class="flex flex-wrap justify-center mb-4">
             <div class="inline-block m-2 card w-80 max-w-sm bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-            <figure><img src="./img/pengurus/ketua.jpg" alt="ketua umum" class="max-h-min"></figure>
+            <figure><img src="./img/pengurus/kahim.jpg" alt="ketua umum" class="max-h-min"></figure>
             <div class="card-body p-5">
-                <h2 class="card-title justify-center">Muhammad Farhan Zuhdi</h2>
+                <h2 class="card-title justify-center">M. Erlangga Adi Nugraha</h2>
                 <p>Ketua Umum</p>
             </div>
             </div>
             <div class="inline-block m-2 card w-80 max-w-sm bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
                 <figure><img src="./img/pengurus/wakil.jpg" alt="wakil ketua"></figure>
                 <div class="card-body p-5">
-                    <h2 class="card-title justify-center">Muhammad Reza Rizki Rahmadi</h2>
+                    <h2 class="card-title justify-center">Lutfi Maulana</h2>
                     <p>Wakil Ketua Umum</p>
                 </div>
             </div>
@@ -57,13 +57,13 @@
                     <div class="m-2 card lg:w-80 max-w-sm bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
                         <figure><img src="./img/pengurus/sekre.jpg" alt="sekretaris" class="max-h-min"></figure>
                         <div class="card-body p-5">
-                            <h2 class="card-title justify-center">Annisha Aprillya</h2>
+                            <h2 class="card-title justify-center">Deyola Fadwa Shifana</h2>
                         </div>
                     </div>
                 </div>
                 <div class=" text-neutral-content px-3 max-w-full">
                 <h1 class="hidden text-center lg:block lg:text-left text-5xl font-bold">Sekretaris umum</h1>
-                <p class="py-3 text-justify indent-4 sm:text-lg">Sekretaris Umum merupakan bagian dari struktur kepengurusan Himpunan Mahasiswa Sistem Informasi Universitas Andalas Periode 2022 yang memiliki fokus dalam melaksanakan tugas sebagai sekretaris seperti pengadaan SOP untuk surat-menyurat, pengarsipan, laporan-laporan yang terkait dengan Himpunan Mahasiswa Sistem Informasi (HMSI) baik berupa laporan pertanggungjawaban, penjadwalan kegiatan, maupun rancangan program kerja.</p>
+                <p class="py-3 text-justify indent-4 sm:text-lg">Sekretaris Umum merupakan bagian dari struktur kepengurusan Himpunan Mahasiswa Sistem Informasi Universitas Andalas Periode 2023 yang memiliki fokus dalam melaksanakan tugas sebagai sekretaris seperti pengadaan SOP untuk surat-menyurat, pengarsipan, laporan-laporan yang terkait dengan Himpunan Mahasiswa Sistem Informasi (HMSI) baik berupa laporan pertanggungjawaban, penjadwalan kegiatan, maupun rancangan program kerja.</p>
                 </div>
             </div>
         </div>
@@ -75,15 +75,15 @@
                 <p class="hmsi text-3xl sm:text-5xl lg:hidden text-white pt-4">Bendahara umum</p>
                 <div class="flex justify-center">
                     <div class="m-2 card lg:w-80 max-w-sm bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                        <figure><img src="./img/pengurus/bendahara.jpg" alt="bendahara" class="max-h-min"></figure>
+                        <figure><img src="./img/pengurus/bendum.jpg" alt="bendahara" class="max-h-min"></figure>
                         <div class="card-body p-5">
-                            <h2 class="card-title justify-center">Raidha Qatrunnada</h2>
+                            <h2 class="card-title justify-center">Husna Afiqah Yossyafra</h2>
                         </div>
                     </div>
                 </div>
                 <div class=" text-neutral-content px-3 max-w-full">
                 <h1 class="hidden text-center lg:block lg:text-left text-5xl font-bold">Bendahara umum</h1>
-                <p class="py-3 text-justify indent-4 sm:text-lg">Bendahara merupakan bagian dari struktur kepengurusan Himpunan Mahasiswa Sistem Informasi Universitas Andalas Periode 2022. Bendahara bertanggung jawab membuat anggaran per periode, mengumpulkan iuran, mengatur keuangan dan segala hal yang berhubungan dengan keuangan HMSI Sistem Informasi Universitas Andalas.</p>
+                <p class="py-3 text-justify indent-4 sm:text-lg">Bendahara merupakan bagian dari struktur kepengurusan Himpunan Mahasiswa Sistem Informasi Universitas Andalas Periode 2023. Bendahara bertanggung jawab membuat anggaran per periode, mengumpulkan iuran, mengatur keuangan dan segala hal yang berhubungan dengan keuangan HMSI Sistem Informasi Universitas Andalas.</p>
                 </div>
             </div>
         </div>

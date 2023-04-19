@@ -38,7 +38,7 @@
                       <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
                       <li><a href="/lambang">Arti Lambang</a></li>
                       <li><a href="/alumni">Alumni</a></li>
-                      <li><a href="/visit">Berkunjung ke HMSI</a></li>
+                      <!-- <li><a href="/visit">Berkunjung ke HMSI</a></li> -->
                     </ul>
                   </li>
                   <li tabindex="0">
@@ -300,7 +300,7 @@
                 <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
                 <li><a href="/lambang">Arti Lambang</a></li>
                 <li><a href="/alumni">Alumni</a></li>
-                <li><a href="/visit">Berkunjung ke HMSI</a></li>
+                <!-- <li><a href="/visit">Berkunjung ke HMSI</a></li> -->
               </ul>
             </div>
           </div>

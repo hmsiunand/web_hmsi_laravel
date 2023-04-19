@@ -12,7 +12,7 @@
         <div class="hero min-h-screen">
             <div class="hero-content flex-col lg:flex-row px-5 sm:px-16 2xl:px-0">
                 <div class="flex justify-center">
-                <img src="./img/pengurus/medkraf/medkraf.jpg" alt="divisi rtk" class="max-w-xs rounded-lg shadow-2xl sm:hover:-translate-y-2 duration-100" loading="lazy"/>
+                <img src="./img/pengurus/rtk/rtk.jpg" alt="divisi rtk" class="max-w-xs rounded-lg shadow-2xl sm:hover:-translate-y-2 duration-100" loading="lazy"/>
                 </div>
                 <div class=" text-neutral-content px-3 max-w-full text-center lg:text-left">
                     <p class="text-lg sm:text-xl font-bold">Apa itu divisi Rumah Tangga dan Kesekretariatan?</p>
@@ -32,14 +32,14 @@
 
         <div class="flex flex-wrap justify-evenly pb-6">
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/rtk/IMG_8168.jpg" alt="kadiv rtk" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="./img/pengurus/rtk/kadiv-rtk.jpg" alt="kadiv rtk" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                 <h2 class="card-title justify-center">Athifa Rifda Andra</h2>
                 <p>Kepala Divisi</p>
                 </div>
             </div>
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/rtk/IMG_8176.jpg" alt="sekbend rtk" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="./img/pengurus/rtk/sekbend-rtk.jpg" alt="sekbend rtk" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Niki Yulia Nada</h2>
                     <p>Sekretaris-Bendahara</p>

@@ -33,14 +33,14 @@
 
         <div class="flex flex-wrap justify-evenly pb-6">
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/medkraf/IMG_8317.jpg" alt="kadiv medkraf" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="./img/pengurus/medkraf/kadiv-medkraf.jpg" alt="kadiv medkraf" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Fathih Muhammad Alfi</h2>
                     <p>Ketua Divisi</p>
                 </div>
             </div>
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/medkraf/IMG_8486.jpg" alt="sekbend medkraf" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="./img/pengurus/medkraf/sekbend-medkraf.jpg" alt="sekbend medkraf" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Akmal Rafi Nursya’bani</h2>
                     <p>Sekretaris-Bendahara</p>
