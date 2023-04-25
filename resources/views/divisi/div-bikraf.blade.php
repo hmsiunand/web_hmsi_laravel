@@ -32,17 +32,17 @@
 
         <div class="flex flex-wrap justify-evenly pb-6">
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="{{ asset('img/pengurus/bikraf/kadiv-bikraf.jpg') }}" alt="kadiv bikraf" class="max-h-min" loading="lazy"></figure>
-                <div class="card-body">
-                <h2 class="card-title justify-center">Syafira Putri Zahra</h2>
-                <p>Ketua Divisi</p>
-                </div>
-            </div>
-            <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
                 <figure><img src="{{ asset('img/pengurus/bikraf/sekre-bikraf.jpg') }}" alt="sekre bikraf" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Darma Zidane Gusnambi</h2>
                     <p>Sekretaris</p>
+                </div>
+            </div>
+            <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
+                <figure><img src="{{ asset('img/pengurus/bikraf/kadiv-bikraf.jpg') }}" alt="kadiv bikraf" class="max-h-min" loading="lazy"></figure>
+                <div class="card-body">
+                <h2 class="card-title justify-center">Syafira Putri Zahra</h2>
+                <p>Ketua Divisi</p>
                 </div>
             </div>
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">

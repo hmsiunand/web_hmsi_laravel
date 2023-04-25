@@ -22,7 +22,6 @@
             </div>
           </div>
         <br>
-<!-- <br class="hidden lg:block"> -->
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Informasi dan Media</h2>
@@ -79,6 +78,7 @@
               </ul>
             </div>
           </div>
+          <br class="hidden lg:block">
           <div class="inline-block m-2 card max-w-sm min-w-min bg-base-100 sm:hover:-translate-y-1 duration-100 shadow-xl">
             <div class="card-body">
               <h2 class="card-title font-bold justify-center">Divisi Rumah Tangga dan Kesekretariatan</h2>
