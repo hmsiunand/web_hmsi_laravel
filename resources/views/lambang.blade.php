@@ -13,7 +13,7 @@
           </div>
           <!-- <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center> -->
           <!-- <h1 class="text-3xl sm:text-5xl font-bold mb-9">Arti Lambang HMSI</h1> -->
-          <img src="./img/logo-hmsi.png" class="max-w-full sm:max-w-lg my-3 mx-auto" />
+          <img src="{{ asset('img/logo-hmsi.png') }}" class="max-w-full sm:max-w-lg my-3 mx-auto" />
           <ol class="py-6 px-3 sm:px-6 list-decimal text-justify list-inside text-lg">
             <li class="pt-3 font-bold">Biru</li>
               <p>melambangkan kebijakan, kepercayaan, dan loyalitas. Selain itu, warna biru juga melambangkan kenyamanan.</p>

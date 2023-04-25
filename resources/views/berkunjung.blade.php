@@ -12,8 +12,6 @@
             <p class="text-3xl sm:text-5xl py-1 text-white blog-tebal">Berkunjung ke HMSI</p>
           </div>
           <center><hr class="w-7/12 xl:w-5/12 2xl:w-1/4 my-2"></center>
-          <!-- <h1 class="text-3xl sm:text-5xl font-bold mb-9">Tentang HMSI</h1>
-          <img src="./img/logo-hmsi.png" class="max-w-full sm:max-w-lg my-3 mx-auto" /> -->
           <ul class="py-6 px-3 sm:px-6 lg:px-4 text-justify text-lg">
             <li class="pt-5 font-bold text-xl">Sejarah Berdirinya Himpunan Mahasiswa Sistem Informasi</li>
               <p class="indent-4">Dengan keinginan bersama dari seluruh mahasiswa jurusan Sistem Informasi untuk menyatukan ide, aspirasi serta kreativitas, maka dibentuklah suatu wadah yang dapat menjembatani hasrat dan keinginan yang ada. Berikut periode penting pendirian HMSI :</p>
@@ -39,9 +37,6 @@
                     <li>b.	Meningkatkan kualitas SDM baik secara intelektualitas maupun profesionalisme</li>
                   </ol>
               </ul>
-            <!-- <li class="pt-5 font-bold text-xl">Struktur Organisasi</li>
-              <p class="indent-4">Jumlah Pengurus Himpunan Mahasiswa Sistem Informasi sebanyak 55 orang. Struktur Kepengurusan Himpunan Mahasiswa Sistem Informasi dapat dilihat seperti bagan di bawah ini.</p>
-              <img src="./img/struktur hmsi.png" alt="struktur hmsi 2022" class="mt-5 mx-auto"> -->
           </ul>
           
         </div>

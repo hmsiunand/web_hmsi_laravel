@@ -12,7 +12,7 @@
         <div class="hero min-h-screen">
             <div class="hero-content flex-col lg:flex-row px-5 sm:px-16 2xl:px-0">
                 <div class="flex justify-center">
-                    <img src="./img/pengurus/psdm/psdm.jpg" alt="divisi psdm" class="max-w-xs rounded-lg shadow-2xl sm:hover:-translate-y-2 duration-100" loading="lazy"/>
+                    <img src="{{ asset('img/pengurus/psdm/psdm.jpg') }}" alt="divisi psdm" class="max-w-xs rounded-lg shadow-2xl sm:hover:-translate-y-2 duration-100" loading="lazy"/>
                 </div>
                 <div class=" text-neutral-content px-3 max-w-full text-center lg:text-left">
                     <p class="text-lg sm:text-xl font-bold">Apa itu divisi PSDM?</p>
@@ -30,14 +30,14 @@
 
         <div class="flex flex-wrap justify-evenly pb-6">
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/psdm/kadiv-psdm.jpg" alt="kadiv psdm" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="{{ asset('img/pengurus/psdm/kadiv-psdm.jpg') }}" alt="kadiv psdm" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                 <h2 class="card-title justify-center">Arbiyan Realson</h2>
                 <p>Ketua Divisi</p>
                 </div>
             </div>
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="./img/pengurus/psdm/sekbend-psdm.jpg" alt="sekbend psdm" class="max-h-min" loading="lazy"></figure>
+                <figure><img src="{{ asset('img/pengurus/psdm/sekbend-psdm.jpg') }}" alt="sekbend psdm" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                     <h2 class="card-title justify-center">Rafiqatul Ulya</h2>
                     <p>Sekretaris-Bendahara</p>

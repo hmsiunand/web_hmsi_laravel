@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('img/favicon-96x96.png') }}" type="image/x-icon">
-
+    @yield('meta-index')
+    
     <title>@yield('title') | HMSI Universitas Andalas</title>
 </head>
 <body>
@@ -36,16 +37,17 @@
                 </a>
               @else
                 <ul class="hmsi menu menu-horizontal p-0 hidden sm:flex">
+                <li><a href="/isce">ISCE</a></li>
                   <li tabindex="0">
                     <a>
                       Tentang
                       <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                     </a>
                     <ul class="p-2 bg-base-100 text-black rounded-box">
-                      <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
-                      <li><a href="/lambang">Arti Lambang</a></li>
-                      <li><a href="/alumni">Alumni</a></li>
-                      <!-- <li><a href="/visit">Berkunjung ke HMSI</a></li> -->
+                      <li><a href="/tentang">Tentang HMSI</a></li>
+                      <li><a href="/tentang/lambang">Arti Lambang</a></li>
+                      <li><a href="/tentang/alumni">Alumni</a></li>
+                      <!-- <li><a href="/tentang/berkunjung">Berkunjung ke HMSI</a></li> -->
                     </ul>
                   </li>
                   <li tabindex="0">
@@ -54,14 +56,14 @@
                       <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                     </a>
                     <ul class="p-2 bg-base-100 text-black rounded-box">
-                      <li><a href="/inti">Inti</a></li>
-                      <li><a href="/div-psdm">PSDM</a></li>
-                      <li><a href="/div-internal">Internal</a></li>
-                      <li><a href="/div-eksternal">Eksternal</a></li>
-                      <li><a href="/div-bikraf">Bisnis Kreatif</a></li>
-                      <li><a href="/div-psi">PSI</a></li>
-                      <li><a href="/div-rtk">RTK</a></li>
-                      <li><a href="/div-medkraf">Media Kreatif</a></li>
+                      <li><a href="/divisi/inti">Inti</a></li>
+                      <li><a href="/divisi/psdm">PSDM</a></li>
+                      <li><a href="/divisi/internal">Internal</a></li>
+                      <li><a href="/divisi/eksternal">Eksternal</a></li>
+                      <li><a href="/divisi/bikraf">Bisnis Kreatif</a></li>
+                      <li><a href="/divisi/psi">PSI</a></li>
+                      <li><a href="/divisi/rtk">RTK</a></li>
+                      <li><a href="/divisi/medkraf">Media Kreatif</a></li>
                     </ul>
                   </li>
                   <li><a href="/blog">Blog</a></li>
@@ -110,7 +112,6 @@
       <div class="drawer-side">
         <label for="my-drawer-4" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-60 bg-base-100 text-base-content">
-          <p>Menu</p>
           <div class="collapse collapse-plus overflow-visible">
             <input type="checkbox" />
             <div class="collapse-title font-medium">
@@ -118,10 +119,10 @@
             </div>
             <div class="collapse-content"> 
               <ul>
-                <li><a href="/tentang-hmsi">Tentang HMSI</a></li>
-                <li><a href="/lambang">Arti Lambang</a></li>
-                <li><a href="/alumni">Alumni</a></li>
-                <!-- <li><a href="/visit">Berkunjung ke HMSI</a></li> -->
+                <li><a href="/tentang">Tentang HMSI</a></li>
+                <li><a href="/tentang/lambang">Arti Lambang</a></li>
+                <li><a href="/tentang/alumni">Alumni</a></li>
+                <!-- <li><a href="/tentang/berkunjung">Berkunjung ke HMSI</a></li> -->
               </ul>
             </div>
           </div>
@@ -132,21 +133,22 @@
             </div>
             <div class="collapse-content"> 
               <ul>
-                <li><a href="/inti">Inti</a></li>
-                <li><a href="/div-psdm">PSDM</a></li>
-                <li><a href="/div-internal">Internal</a></li>
-                <li><a href="/div-eksternal">Eksternal</a></li>
-                <li><a href="/div-bikraf">Bisnis Kreatif</a></li>
-                <li><a href="/div-psi">PSI</a></li>
-                <li><a href="/div-rtk">RTK</a></li>
-                <li><a href="/div-medkraf">Media Kreatif</a></li>
+                <li><a href="/divisi/inti">Inti</a></li>
+                <li><a href="/divisi/psdm">PSDM</a></li>
+                <li><a href="/divisi/internal">Internal</a></li>
+                <li><a href="/divisi/eksternal">Eksternal</a></li>
+                <li><a href="/divisi/bikraf">Bisnis Kreatif</a></li>
+                <li><a href="/divisi/psi">PSI</a></li>
+                <li><a href="/divisi/rtk">RTK</a></li>
+                <li><a href="/divisi/medkraf">Media Kreatif</a></li>
               </ul>
             </div>
           </div>
           <li><a href="/blog" class="font-medium">Blog</a></li>
+          <li><a href="/isce" class="font-medium">ISCE</a></li>
         </ul>
       </div>
     </div>
-
+    @yield('js-index')
 </body>
 </html>
