@@ -14,24 +14,24 @@
     <!-- untuk layar laptop -->
     <div class="px-6 py-32 sm:px-16 sm:py-56 lg:pl-28 xl:pl-48 2xl:pl-72 hidden sm:block" id="element">
         <span id="ityped" class="ityped hmsi text-4xl sm:text-6xl text-white"></span>
-        <!-- <p class="hmsi text-5xl sm:text-7xl text-white">Welcome</p>
-        <p class="hmsi text-sm sm:text-xl text-white">Selamat datang di situs HMSI</p> -->
     </div>
     
     <!-- untuk layar HP -->
-    <div class="px-6 py-32 text-center sm:hidden">
-      <div class="flex justify-center mb-4">
-        <img src="{{asset('img/logo-unand.png')}}" alt="logo-unand" class="h-16 mx-2" loading="lazy">
-        <img src="{{asset('img/logo-hmsi.png')}}" alt="logo-hmsi" class="h-16 mx-2" loading="lazy">
+    <div class="hero min-h-screen sm:hidden" style="background-image: url(img/pengurus/smwahh.jpg);">
+      <div class="hero-overlay bg-opacity-80"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <img src="{{asset('img/logo-hmsi.png')}}" alt="logo-hmsi" class="h-36 mx-auto" loading="lazy">
+          <h1 class="mb-5 text-4xl font-bold">Selamat Datang!</h1>
+          <p class="mb-48">di situs web resmi<br>Himpunan Mahasiswa Sistem Informasi<br>Universitas Andalas</p>
+        </div>
       </div>
-      <!-- <span id="ityped" class="ityped hmsi text-5xl text-white py-3"></span> -->
-      <p class="hmsi text-5xl text-white py-3">Welcome</p>
-      <p class="huruf-normal text-white py-3 leading-7">Selamat datang di situs <br>Himpunan Mahasiswa Sistem Informasi <br> Fakultas Teknologi Informasi <br>Universitas Andalas</p>
     </div>
+
 
     <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row">
-          <img src="./img/logo-hmsi.png" class="max-w-full sm:max-w-xl" loading="lazy"/>
+          <img src="{{asset('img/logo-hmsi.png')}}" class="max-w-full sm:max-w-xl hidden sm:block" loading="lazy"/>
           <div class=" text-neutral-content px-3 max-w-full">
             <h1 class="text-3xl text-center lg:text-left sm:text-5xl font-bold">Tentang Kami</h1>
             <p class="py-3 text-justify indent-4">HMSI adalah Himpunan Mahasiswa Sistem Informasi yang berada pada jurusan Sistem Informasi yang berfungsi sebagai wadah untuk menyalurkan aspirasi, media komunikasi dan informasi, serta pembelajaran organisasi untuk pengembangan diri bagi anggotanya.</p>
@@ -49,13 +49,13 @@
                 <li>Mengakomodasikan, mengkoordinasikan dan mewujudkan segenap aspirasi mahasiswa Sistem Informasi</li>
                 <li>Meningkatkan kualitas SDM baik secara intelektualitas maupun profesionalisme</li>
               </ol>
-              <a href="/tentang-hmsi" class="btn mt-5">Selengkapnya</a>
+              <a href="/tentang" class="btn mt-5">Selengkapnya</a>
             </section>
           </div>
         </div>
     </div>
 
-    <div class="text-center">
+    <section class="text-center">
       <div class="pt-6 sm:pt-0 text-neutral-content">
         <h1 class="text-3xl sm:text-5xl font-bold">Divisi</h1>
         <p class="py-6">Divisi-divisi yang ada di HMSI Universitas Andalas</p>
@@ -137,12 +137,12 @@
         </div>
       </a>
 
-  
-    </div>
+    </section>
 
-    <div class="peta py-14">
+
+    <section class="peta py-14">
       <iframe class="lg:w-4/5 w-10/12 mx-auto max-w-6xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3092131339718!2d100.45889341427304!3d-0.9153144355909941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b7963e1ea631%3A0x452d09b61f76d6ec!2sFakultas+Teknologi+Informasi!5e0!3m2!1sid!2sid!4v1547957484219" width="100%" height="500" frameborder="1" style="border:0" allowfullscreen></iframe>
-    </div>
+    </section>
 
     <section class="pesan text-center px-10" >
       <h1 class="text-neutral-content text-3xl sm:text-5xl font-bold mb-2" id="kotak-saran">Kotak Pesan</h1>
