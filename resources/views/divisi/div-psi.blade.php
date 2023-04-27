@@ -64,66 +64,82 @@
         <section class="text-center py-6 px-10">
         <p class="hmsi text-2xl sm:text-4xl text-white pb-4">Program Kerja</p>
         <center>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Pemeliharaan dan Pengelolaan Sistem Informasi HMSI
+        <div id="accordion-collapse" data-accordion="collapse" class="max-w-4xl">
+
+            <h2 id="accordion-pemeliharaan-heading">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black rounded-t-xl hover:bg-gray-100 bg-white" data-accordion-target="#accordion-pemeliharaan-body" aria-expanded="false" aria-controls="accordion-pemeliharaan-body">
+                    <span class="text-black">Pemeliharaan dan Pengelolaan Sistem Informasi HMSI</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-pemeliharaan-body" class="hidden" aria-labelledby="accordion-pemeliharaan-heading">
+                <div class="p-5 bg-base-100 text-left">
+                    <p class="font-bold">Latar belakang</p>
+                    <p>Karena dibutuhkan sebuah sistem informasi yang dapat mengelola informasi serta dapat diakses oleh HMSI</p>
+                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                    <ol class="list-decimal list-inside">
+                        <li>Mengelola Website HMSI.</li>
+                        <li>Melakukan maintenance website HMSI.</li>
+                    </ol>
+                </div>
             </div>
-            <div class="collapse-content"> 
-                <p class="font-bold">Latar belakang</p>
-                <p>Karena dibutuhkan sebuah sistem informasi yang dapat mengelola informasi serta dapat diakses oleh HMSI</p>
-                <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                <ol class="list-decimal list-inside">
-                    <li>Mengelola Website HMSI.</li>
-                    <li>Melakukan maintenance website HMSI.</li>
-                </ol>
+
+            <h2 id="accordion-xampp-heading">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-xampp-body" aria-expanded="false" aria-controls="accordion-xampp-body">
+                    <span class="text-black">Exam Preparation (XAMPP)</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-xampp-body" class="hidden" aria-labelledby="accordion-xampp-heading">
+                <div class="p-5 bg-base-100 text-left">
+                    <p class="font-bold">Latar belakang</p>
+                    <p>Karena padatnya kegiatan di kampus yang membuat mahasiswa kesusahan untuk belajar dalam menghadapi ujian maka dibutuhkan sebuah kegiatan yang dapat membantu mahasiswa sistem informasi dalam mempersiapkan dirinya untuk menghadapi pelaksanaan ujian(UTS/UAS)</p>
+                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                    <ol class="list-decimal list-inside">
+                        <li>Membuat google form untuk mewadahi daftar permintaan pelaksanaan XAMPP.</li>
+                        <li>Mencari pemateri untuk berbagi dan sharing tentang mata kuliah tertentu.</li>
+                        <li>Pelaksanaan XAMPP.</li>
+                        <li>Memberikan Pembahasan Materi (Pembahasan Soal/Pembahasan Materi yang bersangkutan dengan materi ujian)</li>
+                    </ol>
+                </div>
             </div>
+
+            <h2 id="accordion-pti-heading">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-pti-body" aria-expanded="false" aria-controls="accordion-pti-body">
+                    <span class="text-black">Pelatihan Teknologi Informasi</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-pti-body" class="hidden" aria-labelledby="accordion-pti-heading">
+                <div class="p-5 bg-base-100 text-left">
+                    <p class="font-bold">Latar belakang</p>
+                    <p>Karena perkembangan teknologi yang cukup cepat serta semakin ketatnya persaingan dunia kerja di luar sana maka dibutuhkan sebuah kegiatan untuk dapat meningkatkan hardskill dari mahasiswa sistem informasi dalam menghadapi permintaan dunia kerja pada saat sekarang.</p>
+                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                    <ol class="list-decimal list-inside">
+                        <li>Pelaksanaan pelatihan/ workshop teknologi informasi, missal : Desain UI,pelatihan/workshop pemrograman dan/atau tutor teman sebaya.</li>
+                        <li>Mencari pemateri untuk kegiatan pelatihan/workshop TI.</li>
+                        <li>Pelaksanaan Pelatihan/Workshop</li>
+                    </ol>
+                </div>
             </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Exam Preparation (XAMPP)
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold">Latar belakang</p>
-                <p>Karena padatnya kegiatan di kampus yang membuat mahasiswa kesusahan untuk belajar dalam menghadapi ujian maka dibutuhkan sebuah kegiatan yang dapat membantu mahasiswa sistem informasi dalam mempersiapkan dirinya untuk menghadapi pelaksanaan ujian(UTS/UAS)</p>
-                <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                <ol class="list-decimal list-inside">
-                    <li>Membuat google form untuk mewadahi daftar permintaan pelaksanaan XAMPP.</li>
-                    <li>Mencari pemateri untuk berbagi dan sharing tentang mata kuliah tertentu.</li>
-                    <li>Pelaksanaan XAMPP.</li>
-                    <li>Memberikan Pembahasan Materi (Pembahasan Soal/Pembahasan Materi yang bersangkutan dengan materi ujian)</li>
-                </ol>
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Pelatihan Teknologi Informasi
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold">Latar belakang</p>
-                <p>Karena perkembangan teknologi yang cukup cepat serta semakin ketatnya persaingan dunia kerja di luar sana maka dibutuhkan sebuah kegiatan untuk dapat meningkatkan hardskill dari mahasiswa sistem informasi dalam menghadapi permintaan dunia kerja pada saat sekarang.</p>
-                <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                <ol class="list-decimal list-inside">
-                    <li>Pelaksanaan pelatihan/ workshop teknologi informasi, missal : Desain UI,pelatihan/workshop pemrograman dan/atau tutor teman sebaya.</li>
-                    <li>Mencari pemateri untuk kegiatan pelatihan/workshop TI.</li>
-                    <li>Pelaksanaan Pelatihan/Workshop</li>
-                </ol>
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Information System Celebration & Event
-            </div>
-            <div class="collapse-content"> 
+
+            <h2 id="accordion-isce-heading">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white rounded-b-xl focus:rounded-b-none" data-accordion-target="#accordion-isce-body" aria-expanded="false" aria-controls="accordion-isce-body">
+                    <span class="text-black">Information System Celebration & Event</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </h2>
+            <div id="accordion-isce-body" class="hidden" aria-labelledby="accordion-isce-heading">
+                <div class="p-5 bg-base-100 text-left rounded-b-xl">
                 <p class="font-bold">Latar belakang</p>
                 <p>ISCE merupakan agenda 2 tahun sekali dari HMSI. ISCE bertujuan untuk mengenalkan Departemen Sistem Informasi Universitas Andalas. ISCE dilaksanakan agar dapat menumbuhkan dan memacu daya saing dalam mengikuti lomba di bidang IT. Rangkaian acara yang diadakan yaitu berupa Hackathon, Bazzar, Seminar UI/UX, Seminar Kewirausahaan, dan Workshop.</p>
                 <p class="font-bold mt-2">Bentuk Kegiatan</p>
                 <p>Perlombaan di bidang IT, Bazzar, dan Workshop/Seminar.</p>
+                </div>
             </div>
-            </div>
+
+        </div>
+
         </center>
         </section>
     </main>

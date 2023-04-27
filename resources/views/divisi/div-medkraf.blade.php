@@ -67,82 +67,105 @@
         <section class="text-center py-6 px-10">
             <p class="hmsi text-2xl sm:text-4xl text-white pb-4">Program Kerja</p>
             <center>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-                <input type="checkbox" />
-                <div class="collapse-title text-lg font-medium">
-                    Pengelolaan Sosial Media
+
+            <div id="accordion-collapse" data-accordion="collapse" class="max-w-4xl">
+
+                <h2 id="accordion-sosmed-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black rounded-t-xl hover:bg-gray-100 bg-white" data-accordion-target="#accordion-sosmed-body" aria-expanded="false" aria-controls="accordion-sosmed-body">
+                        <span class="text-black">Pengelolaan Sosial Media</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-sosmed-body" class="hidden" aria-labelledby="accordion-sosmed-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukannya wadah yang digunakan sebagai penyebaran informasi.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Mengelola media sosial dan berbagi informasi. (Media sosial yang digunakan yaitu Twitter, Instagram, LinkedIn, dan Youtube)</p>
+                    </div>
                 </div>
-                <div class="collapse-content"> 
-                    <p class="font-bold">Latar belakang</p>
-                    <p>Diperlukannya wadah yang digunakan sebagai penyebaran informasi.</p>
-                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                    <p>Mengelola media sosial dan berbagi informasi. (Media sosial yang digunakan yaitu Twitter, Instagram, LinkedIn, dan Youtube)</p>
+
+                <h2 id="accordion-jasa-desain-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-jasa-desain-body" aria-expanded="false" aria-controls="accordion-jasa-desain-body">
+                        <span class="text-black">Jasa Desain</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-jasa-desain-body" class="hidden" aria-labelledby="accordion-jasa-desain-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Menjadi tempat bagi anggota yang membutuhkan desain untuk berbagai media, seperti spanduk, banner, dll.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Membuat desain untuk berbagai kebutuhan, baik media cetak maupun media online sesusai SOP yang berlaku.</p>
+                    </div>
                 </div>
+
+                <h2 id="accordion-foto-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-foto-body" aria-expanded="false" aria-controls="accordion-foto-body">
+                        <span class="text-black">Foto Pengurus</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-foto-body" class="hidden" aria-labelledby="accordion-foto-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukan dokumentasi pengurus HMSI yang dipajang di ruang sekretariat HMSI sebagai informasi kepada pengunjung sekretariat HMSI.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <ol class="list-decimal list-inside">
+                            <li>Mengadakan sesi foto bersama kepengurusan HMSI periode 2023.</li>
+                            <li>Mencetak foto tersebut ke dalam sebuah bingkai foto.</li>
+                            <li>Memajang foto kepengurusan di sekretariat HMSI.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h2 id="accordion-rekam-jejak-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-rekam-jejak-body" aria-expanded="false" aria-controls="accordion-rekam-jejak-body">
+                        <span class="text-black">Rekam Jejak</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-rekam-jejak-body" class="hidden" aria-labelledby="accordion-rekam-jejak-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukannya dokumentasi berupa foto dan video kegiatan-kegiatan yang dilakukan pengurus HMSI.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Mendokumentasikan dan editing video setiap kegiatan yang dilaksanakan oleh Himpunan Mahasiswa SI dan setiap pengambilan dokumentasi dimasukkan ke dalam Google Drive dan di upload ke media sosial HMSI.</p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-seminar-desain-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-seminar-desain-body" aria-expanded="false" aria-controls="accordion-seminar-desain-body">
+                        <span class="text-black">Seminar Desain</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-seminar-desain-body" class="hidden" aria-labelledby="accordion-seminar-desain-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukannya pelatihan desain kepada pengurus HMSI maupun mahasiswa aktif FTI Unand.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Memberikan pelatihan desain kepada pengurus HMSI maupun mahasiswa aktif FTI Unand dengan pemateri yang memiliki keahlian di bidang desain.</p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-sertif-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white rounded-b-xl focus:rounded-b-none" data-accordion-target="#accordion-sertif-body" aria-expanded="false" aria-controls="accordion-sertif-body">
+                        <span class="text-black">Buku Tahunan</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-sertif-body" class="hidden" aria-labelledby="accordion-sertif-heading">
+                    <div class="p-5 bg-base-100 text-left rounded-b-xl">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Perlu adanya suatu dokumentasi untuk setiap kegiatan yang dilakukan selama periode kepengurusan sebagai kenang-kenangan bagi pengurus HMSI dan dapat menjadi motivasi bagi kepengurusan selanjutnya.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Membuat desain dan mengumpulkan dokumentasi kegiatan selama setahun kepengurusan dalam bentuk album dengan keterangan kegiatan selama.</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-                <input type="checkbox" />
-                <div class="collapse-title text-lg font-medium">
-                    Jasa Desain
-                </div>
-                <div class="collapse-content"> 
-                    <p class="font-bold">Latar belakang</p>
-                    <p>Menjadi tempat bagi anggota yang membutuhkan desain untuk berbagai media, seperti spanduk, banner, dll.</p>
-                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                    <p>Membuat desain untuk berbagai kebutuhan, baik media cetak maupun media online sesusai SOP yang berlaku.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-                <input type="checkbox" />
-                <div class="collapse-title text-lg font-medium">
-                    Foto Pengurus
-                </div>
-                <div class="collapse-content"> 
-                    <p class="font-bold">Latar belakang</p>
-                    <p>Diperlukan dokumentasi pengurus HMSI yang dipajang di ruang sekretariat HMSI sebagai informasi kepada pengunjung sekretariat HMSI.</p>
-                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                    <ol class="list-decimal list-inside">
-                        <li>Mengadakan sesi foto bersama kepengurusan HMSI periode 2023.</li>
-                        <li>Mencetak foto tersebut ke dalam sebuah bingkai foto.</li>
-                        <li>Memajang foto kepengurusan di sekretariat HMSI.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-                <input type="checkbox" />
-                <div class="collapse-title text-lg font-medium">
-                    Rekam Jejak
-                </div>
-                <div class="collapse-content"> 
-                    <p class="font-bold">Latar belakang</p>
-                    <p>Diperlukannya dokumentasi berupa foto dan video kegiatan-kegiatan yang dilakukan pengurus HMSI.</p>
-                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                    <p>Mendokumentasikan dan editing video setiap kegiatan yang dilaksanakan oleh Himpunan Mahasiswa SI dan setiap pengambilan dokumentasi dimasukkan ke dalam Google Drive dan di upload ke media sosial HMSI.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-                <input type="checkbox" />
-                <div class="collapse-title text-lg font-medium">
-                    Seminar Desain
-                </div>
-                <div class="collapse-content"> 
-                    <p class="font-bold">Latar belakang</p>
-                    <p>Diperlukannya pelatihan desain kepada pengurus HMSI maupun mahasiswa aktif FTI Unand.</p>
-                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                    <p>Memberikan pelatihan desain kepada pengurus HMSI maupun mahasiswa aktif FTI Unand dengan pemateri yang memiliki keahlian di bidang desain.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-                <input type="checkbox" />
-                <div class="collapse-title text-lg font-medium">
-                    Buku Tahunan
-                </div>
-                <div class="collapse-content"> 
-                    <p class="font-bold">Latar belakang</p>
-                    <p>Perlu adanya suatu dokumentasi untuk setiap kegiatan yang dilakukan selama periode kepengurusan sebagai kenang-kenangan bagi pengurus HMSI dan dapat menjadi motivasi bagi kepengurusan selanjutnya.</p>
-                    <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                    <p>Membuat  desain dan mengumpulkan dokumentasi kegiatan selama setahun kepengurusan dalam bentuk album dengan keterangan kegiatan selama.</p>
-                </div>
-            </div>
+
             </center>
         </section>
     </main>

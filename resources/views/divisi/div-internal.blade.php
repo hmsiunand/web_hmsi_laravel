@@ -64,53 +64,68 @@
         <section class="text-center py-6 px-10">
         <p class="hmsi text-2xl sm:text-4xl text-white pb-4">Program Kerja</p>
         <center>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Upgrading Pengurus HMSI
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold">Latar belakang</p>
-                <p>Diperlukan pengurus yang memiliki academic knowledge, skill of thinking, management skill, dan communication skill untuk sebuah organisasi.</p>
-                <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                <p>Sharing dari pemateri</p>
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Gathering Pengurus HMSI
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold">Latar belakang</p>
-                <p>Diperlukan kegiatan yang dapat mempererat silaturahmi sesama pengurus HMSI sehingga dapat meningkatkan kerjasama yang lebih baik dalam kepengurusan</p>
-                <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                <p>Makan bersama dan diskusi perihal HMSI</p>
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Gathering HMSI
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold">Latar belakang</p>
-                <p>Diperlukan kegiatan hiburan untuk mengurangi tingkat kejenuhan yang tinggi dan kegiatan yang dapat mempererat tali silaturahmi.</p>
-                <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                <p>Outbound (Pantai)</p>
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Aspirasi dan Saran
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold">Latar belakang</p>
-                <p>Diperlukan wadah aspirasi dan saran warga Sistem Informasi terkait kebijakan yang dianggap menyimpang</p>
-                <p class="font-bold mt-2">Bentuk Kegiatan</p>
-                <p>Melakukan penyebaran aspirasi dan saran secara lisan maupun berupa link atau QR code dan juga melakukan pengecekan secara berkala terhadap aspirasi dan saran yang telah diberikan warga Sistem Informasi.</p>
-            </div>
+            <div id="accordion-collapse" data-accordion="collapse" class="max-w-4xl">
+
+                <h2 id="accordion-upgrading-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black rounded-t-xl hover:bg-gray-100 bg-white" data-accordion-target="#accordion-upgrading-body" aria-expanded="false" aria-controls="accordion-upgrading-body">
+                        <span class="text-black">Upgrading Pengurus HMSI</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-upgrading-body" class="hidden" aria-labelledby="accordion-upgrading-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukan pengurus yang memiliki academic knowledge, skill of thinking, management skill, dan communication skill untuk sebuah organisasi.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Sharing dari pemateri</p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-gathering-pengurus-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-gathering-pengurus-body" aria-expanded="false" aria-controls="accordion-gathering-pengurus-body">
+                        <span class="text-black">Gathering Pengurus HMSI</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-gathering-pengurus-body" class="hidden" aria-labelledby="accordion-gathering-pengurus-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukan kegiatan yang dapat mempererat silaturahmi sesama pengurus HMSI sehingga dapat meningkatkan kerjasama yang lebih baik dalam kepengurusan</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Makan bersama dan diskusi perihal HMSI</p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-gathering-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-gathering-body" aria-expanded="false" aria-controls="accordion-gathering-body">
+                        <span class="text-black">Gathering HMSI</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-gathering-body" class="hidden" aria-labelledby="accordion-gathering-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukan kegiatan hiburan untuk mengurangi tingkat kejenuhan yang tinggi dan kegiatan yang dapat mempererat tali silaturahmi.</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Outbound (Pantai)</p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-aspirasi-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white rounded-b-xl focus:rounded-b-none" data-accordion-target="#accordion-aspirasi-body" aria-expanded="false" aria-controls="accordion-aspirasi-body">
+                        <span class="text-black">Aspirasi dan Saran</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-aspirasi-body" class="hidden" aria-labelledby="accordion-aspirasi-heading">
+                    <div class="p-5 bg-base-100 text-left rounded-b-xl">
+                        <p class="font-bold">Latar belakang</p>
+                        <p>Diperlukan wadah aspirasi dan saran warga Sistem Informasi terkait kebijakan yang dianggap menyimpang</p>
+                        <p class="font-bold mt-2">Bentuk Kegiatan</p>
+                        <p>Melakukan penyebaran aspirasi dan saran secara lisan maupun berupa link atau QR code dan juga melakukan pengecekan secara berkala terhadap aspirasi dan saran yang telah diberikan warga Sistem Informasi.</p>
+                    </div>
+                </div>
+
             </div>
         </center>
         </section>

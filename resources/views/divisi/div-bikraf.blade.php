@@ -32,17 +32,17 @@
 
         <div class="flex flex-wrap justify-evenly pb-6">
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
-                <figure><img src="{{ asset('img/pengurus/bikraf/sekre-bikraf.jpg') }}" alt="sekre bikraf" class="max-h-min" loading="lazy"></figure>
-                <div class="card-body">
-                    <h2 class="card-title justify-center">Darma Zidane Gusnambi</h2>
-                    <p>Sekretaris</p>
-                </div>
-            </div>
-            <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
                 <figure><img src="{{ asset('img/pengurus/bikraf/kadiv-bikraf.jpg') }}" alt="kadiv bikraf" class="max-h-min" loading="lazy"></figure>
                 <div class="card-body">
                 <h2 class="card-title justify-center">Syafira Putri Zahra</h2>
                 <p>Ketua Divisi</p>
+                </div>
+            </div>
+            <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
+                <figure><img src="{{ asset('img/pengurus/bikraf/sekre-bikraf.jpg') }}" alt="sekre bikraf" class="max-h-min" loading="lazy"></figure>
+                <div class="card-body">
+                    <h2 class="card-title justify-center">Darma Zidane Gusnambi</h2>
+                    <p>Sekretaris</p>
                 </div>
             </div>
             <div class="inline-block m-2 card lg:w-72 max-w-xs bg-base-100 shadow-xl text-center sm:hover:-translate-y-2 duration-100">
@@ -69,75 +69,92 @@
         <section class="text-center py-6 px-10">
         <p class="hmsi text-2xl sm:text-4xl text-white pb-4">Program Kerja</p>
         <center>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Gerai HMSI
+            <div id="accordion-collapse" data-accordion="collapse" class="max-w-4xl">
+                <h2 id="accordion-gerai-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black rounded-t-xl hover:bg-gray-100 bg-white" data-accordion-target="#accordion-gerai-body" aria-expanded="false" aria-controls="accordion-gerai-body">
+                        <span class="text-black">Gerai HMSI</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-gerai-body" class="hidden" aria-labelledby="accordion-gerai-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold mt-2">Latar Belakang</p>
+                        <p>Tempat bagi mahasiswa Sistem Informasi untuk melakukan transaksi dan program kerja utama yang relevan dengan bikraf</p>
+                        <p class="font-bold">Bentuk Kegiatan</p>
+                        <ol class="list-decimal list-inside">
+                            <li>Promosi dan penjualan produk berupa makanan dan minuman di gerai HMSI. Serta adanya promosi melalui media sosial</li>
+                            <li>Pengecekan stok produk setiap minggu dan pencatatan stok produk.</li>
+                            <li>Catatan akumulasi penjualan, pengeluaran, untung, serta kerugian.</li>
+                        </ol>  
+                    </div>
+                </div>
+
+                <h2 id="accordion-baju-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-baju-body" aria-expanded="false" aria-controls="accordion-baju-body">
+                        <span class="text-black">Baju HMSI</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-baju-body" class="hidden" aria-labelledby="accordion-baju-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold mt-2">Latar Belakang</p>
+                        <p>Diperlukannya baju HMSI sebagai identitas untuk mahasiswa Sistem Informasi</p>
+                        <p class="font-bold">Bentuk Kegiatan</p>
+                        <ol class="list-decimal list-inside">
+                            <li>Pendataan mahasiswa Sistem Informasi angkatan 2022</li>
+                            <li>Penerimaan dan pencatatan pembayaran baju.</li>
+                            <li>Pemesanan baju kepada vendor.</li>
+                            <li>Pembagian baju kepada mahasiswa Sistem Informasi angkatan 2023.</li>
+                        </ol> 
+                    </div>
+                </div>
+
+                <h2 id="accordion-idcard-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-idcard-body" aria-expanded="false" aria-controls="accordion-idcard-body">
+                        <span class="text-black">ID Card</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-idcard-body" class="hidden" aria-labelledby="accordion-idcard-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold mt-2">Latar Belakang</p>
+                        <p>Diperlukannya id card sebagai tanda kepengurusan HMSI 2023</p>
+                        <p class="font-bold">Bentuk Kegiatan</p>
+                        <p>Menyediakan id card untuk kepengurusan HMSI 2023</p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-enterpreneur-learning-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white" data-accordion-target="#accordion-enterpreneur-learning-body" aria-expanded="false" aria-controls="accordion-enterpreneur-learning-body">
+                        <span class="text-black">Enterpreneur Learning</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-enterpreneur-learning-body" class="hidden" aria-labelledby="accordion-enterpreneur-learning-heading">
+                    <div class="p-5 bg-base-100 text-left">
+                        <p class="font-bold mt-2">Latar Belakang</p>
+                        <p>Meningkatnya peluang menjadi seorang wirausahawan dan pebisnis untuk mahasiswa, sehingga dibutuhkan wadah pengenalan dan sharing mengenai dunia bisnis dan wirausaha.</p>
+                        <p class="font-bold">Bentuk Kegiatan</p>
+                        <p>Mengadakan seminar dengan mengangkat tema yang berhubungan dengan kegiatan kewirausahaan.</p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-merchandise-heading">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black hover:bg-gray-100 bg-white rounded-b-xl focus:rounded-b-none" data-accordion-target="#accordion-merchandise-body" aria-expanded="false" aria-controls="accordion-merchandise-body">
+                        <span class="text-black">Merchandise</span>
+                        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <div id="accordion-merchandise-body" class="hidden" aria-labelledby="accordion-merchandise-heading">
+                    <div class="p-5 bg-base-100 text-left rounded-b-xl">
+                        <p class="font-bold mt-2">Latar Belakang</p>
+                        <p>Adanya keperluan untuk menambah pemasukan HMSI dan menghasilkan ikon HMSI berupa produk.</p>
+                        <p class="font-bold">Bentuk Kegiatan</p>
+                        <p>Membuat merchandise untuk mahasiswa sistem informasi.</p>
+                    </div>
+                </div>
             </div>
-            <div class="collapse-content"> 
-                <p class="font-bold mt-2">Latar Belakang</p>
-                <p>Tempat bagi mahasiswa Sistem Informasi untuk melakukan transaksi dan program kerja utama yang relevan dengan bikraf</p>
-                <p class="font-bold">Bentuk Kegiatan</p>
-                <ol class="list-decimal list-inside">
-                    <li>Promosi dan penjualan produk berupa makanan dan minuman di gerai HMSI. Serta adanya promosi melalui media sosial</li>
-                    <li>Pengecekan stok produk setiap minggu dan pencatatan stok produk.</li>
-                    <li>Catatan akumulasi penjualan, pengeluaran, untung, serta kerugian.</li>
-                </ol>            
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Baju HMSI
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold mt-2">Latar Belakang</p>
-                <p>Diperlukannya baju HMSI sebagai identitas untuk mahasiswa Sistem Informasi</p>
-                <p class="font-bold">Bentuk Kegiatan</p>
-                <ol class="list-decimal list-inside">
-                    <li>Pendataan mahasiswa Sistem Informasi angkatan 2022</li>
-                    <li>Penerimaan dan pencatatan pembayaran baju.</li>
-                    <li>Pemesanan baju kepada vendor.</li>
-                    <li>Pembagian baju kepada mahasiswa Sistem Informasi angkatan 2023.</li>
-                </ol>            
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                ID Card
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold mt-2">Latar Belakang</p>
-                <p>Diperlukannya id card sebagai tanda kepengurusan HMSI 2023</p>
-                <p class="font-bold">Bentuk Kegiatan</p>
-                <p>Menyediakan id card untuk kepengurusan HMSI 2023</p>
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Enterpreneur Learning
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold mt-2">Latar Belakang</p>
-                <p>Meningkatnya peluang menjadi seorang wirausahawan dan pebisnis untuk mahasiswa, sehingga dibutuhkan wadah pengenalan dan sharing mengenai dunia bisnis dan wirausaha.</p>
-                <p class="font-bold">Bentuk Kegiatan</p>
-                <p>Mengadakan seminar dengan mengangkat tema yang berhubungan dengan kegiatan kewirausahaan.</p>
-            </div>
-            </div>
-            <div class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box my-2 max-w-4xl text-left">
-            <input type="checkbox" />
-            <div class="collapse-title text-lg font-medium">
-                Merchandise
-            </div>
-            <div class="collapse-content"> 
-                <p class="font-bold mt-2">Latar Belakang</p>
-                <p>Adanya keperluan untuk menambah pemasukan HMSI dan menghasilkan ikon HMSI berupa produk.</p>
-                <p class="font-bold">Bentuk Kegiatan</p>
-                <p>Membuat merchandise untuk mahasiswa sistem informasi.</p>
-            </div>
-            </div>
+
         </center>
         </section>
     </main>
