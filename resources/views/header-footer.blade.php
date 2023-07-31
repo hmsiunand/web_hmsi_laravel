@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="shortcut icon" href="{{ asset('img/favicon-96x96.png') }}" type="image/x-icon">
     @yield('meta-index')
-    
+    <meta name="theme-color" content="#23153c">
     <title>@yield('title') | HMSI Universitas Andalas</title>
 </head>
 <body>
@@ -62,6 +62,7 @@
               </ul>
             </li>
             <li><a href="/blog">Blog</a></li>
+            <!-- <li><a href="https://hmsiftiblog.wordpress.com" target="_blank">Blog</a></li> -->
           </ul>
         @endauth
 
@@ -96,13 +97,13 @@
               </button>
               <ul id="dropdown-tentang" class="hidden py-2 space-y-2">
                 <li>
-                  <a href="/tentang" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Tentang HMSI</a>
+                  <a href="/tentang" class="sub-dropdown">Tentang HMSI</a>
                 </li>
                 <li>
-                  <a href="/tentang/lambang" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Arti Lambang</a>
+                  <a href="/tentang/lambang" class="sub-dropdown">Arti Lambang</a>
                 </li>
                 <li>
-                  <a href="/tentang/alumni" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Alumni</a>
+                  <a href="/tentang/alumni" class="sub-dropdown">Alumni</a>
                 </li>
               </ul>
           </li>
@@ -114,32 +115,33 @@
               </button>
               <ul id="dropdown-divisi" class="hidden py-2 space-y-2">
                 <li>
-                  <a href="/divisi/inti" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Inti</a>
+                  <a href="/divisi/inti" class="sub-dropdown">Inti</a>
                 </li>
                 <li>
-                  <a href="/divisi/psdm" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">PSDM</a>
+                  <a href="/divisi/psdm" class="sub-dropdown">PSDM</a>
                 </li>
                 <li>
-                  <a href="/divisi/internal" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Internal</a>
+                  <a href="/divisi/internal" class="sub-dropdown">Internal</a>
                 </li>
                 <li>
-                  <a href="/divisi/eksternal" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Eksternal</a>
+                  <a href="/divisi/eksternal" class="sub-dropdown">Eksternal</a>
                 </li>
                 <li>
-                  <a href="/divisi/bikraf" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bisnis Kreatif</a>
+                  <a href="/divisi/bikraf" class="sub-dropdown">Bisnis Kreatif</a>
                 </li>
                 <li>
-                  <a href="/divisi/psi" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">PSI</a>
+                  <a href="/divisi/psi" class="sub-dropdown">PSI</a>
                 </li>
                 <li>
-                  <a href="/divisi/rtk" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">RTK</a>
+                  <a href="/divisi/rtk" class="sub-dropdown">RTK</a>
                 </li>
                 <li>
-                  <a href="/divisi/medkraf" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Media Kreatif</a>
+                  <a href="/divisi/medkraf" class="sub-dropdown">Media Kreatif</a>
                 </li>
               </ul>
           </li>
           <li>
+              <!-- <a href="https://hmsiftiblog.wordpress.com" target="_blank" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"> -->
               <a href="/blog" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
                 <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path></svg>
                 <span class="flex-1 ml-3 whitespace-nowrap">Blog</span>

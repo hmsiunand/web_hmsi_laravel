@@ -69,3 +69,11 @@
         opacity: 0;
     }
 }
+
+.box-divisi {
+    @apply inline-block m-2 card max-w-xs min-w-min bg-base-100 sm:hover:scale-105 duration-100 shadow-xl;
+}
+
+.sub-dropdown {
+    @apply flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100;
+}
